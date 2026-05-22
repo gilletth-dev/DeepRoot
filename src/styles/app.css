@@ -1,0 +1,67 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  background-color: #f7f7e6;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+h1 {
+  font-family: "LutzHeadline", sans-serif;
+  font-size: clamp(3rem, 1.1429rem + 5.7143vw, 6.2rem);
+  text-align: left;
+  color: #0E402D;
+}
+
+h2 {
+  font-family: "LutzHeadline", sans-serif;
+  font-size: clamp(2.05rem, 1.607rem + 2.768vw, 3.6rem);
+  text-align: left;
+  color: #0E402D;
+}
+
+h3 {
+  font-family: "LutzHeadline", sans-serif;
+  font-size: clamp(1.75rem, 1.536rem + 1.339vw, 2.5rem);
+  text-align: left;
+  color: #0E402D;
+}
+
+h4 {
+  font-family: "Supermolot", sans-serif;
+  font-size: clamp(1.45rem, 1.364rem + 0.536vw, 1.75rem);
+  text-align: left;
+  color: #0E402D;
+}
+
+p {
+  font-family: "Supermolot", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  max-width: 60ch;
+  text-align: left;
+  color: #0E402D;
+}
+
+@font-face {
+  font-family: "LutzHeadline";
+  src: url("../assets/fonts/LutzHeadlineTrialWeb-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Supermolot";
+  src: url("../assets/fonts/TT_Supermolot_Neue_VF_Trial.woff2") format("woff2");
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Grandola";
+  src: url("../assets/fonts/Grandola-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Lakes";
+  src: url("../assets/fonts/TT_Lakes_Neue_Trial_Variable.ttf") format("truetype");
+}/*# sourceMappingURL=app.css.map */

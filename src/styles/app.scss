@@ -1,2 +1,26 @@
 @import 'utils/variables';
 @import 'components/type';
+
+
+@font-face{
+  font-family: "LutzHeadline";
+  src: url("../assets/fonts/LutzHeadlineTrialWeb-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face{
+  font-family: "Supermolot";
+  src: url("../assets/fonts/TT_Supermolot_Neue_VF_Trial.woff2") format("woff2");
+  font-weight: 100 900;
+}
+
+@font-face{
+  font-family: "Grandola";
+  src: url("../assets/fonts/Grandola-Regular.woff2") format("woff2");
+}
+
+@font-face{
+  font-family: "Lakes";
+  src: url("../assets/fonts/TT_Lakes_Neue_Trial_Variable.ttf") format("truetype");
+}
+
