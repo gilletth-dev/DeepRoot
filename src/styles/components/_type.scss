@@ -13,28 +13,28 @@ body{
 
 h1{
   font-family: "LutzHeadline", sans-serif;
-  font-size: clamp(3rem, 1.1429rem + 5.7143vw, 6.2rem);
+  font-size: clamp(3rem, 1.1429rem + 5.7143vw, 6.2rem); //60 à 124
   text-align: left;
   color: $c-txt;
 }
 
 h2{
   font-family: "LutzHeadline", sans-serif;
-  font-size: clamp(2.05rem, calc(1.607rem + 2.768vw), 3.60rem);
+  font-size: clamp(2.05rem, calc(1.607rem + 2.768vw), 3.60rem); //41 à 72
   text-align: left;
   color: $c-txt;
 }
 
 h3{
   font-family: "LutzHeadline", sans-serif;
-  font-size: clamp(1.75rem, calc(1.536rem + 1.339vw), 2.50rem);
+  font-size: clamp(1.75rem, calc(1.536rem + 1.339vw), 2.50rem); //35 à 50
   text-align: left;
   color: $c-txt;
 }
 
 h4{
   font-family: "Supermolot", sans-serif;
-  font-size: clamp(1.45rem, calc(1.364rem + 0.536vw), 1.75rem);
+  font-size: clamp(1.45rem, calc(1.364rem + 0.536vw), 1.75rem); //29 à 35
   text-align: left;
   color: $c-txt;
 }
@@ -42,7 +42,7 @@ h4{
 p{
   font-family: 'Supermolot', sans-serif;
   font-weight: 400;
-  font-size: clamp(1.00rem, calc(0.943rem + 0.357vw), 1.20rem);
+  font-size: clamp(1.00rem, calc(0.943rem + 0.357vw), 1.20rem); //20 à 24
   max-width: 60ch;
   text-align: left;
   color: $c-txt;
