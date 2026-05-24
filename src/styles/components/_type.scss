@@ -1,6 +1,7 @@
 html{
-    scroll-behavior: smooth;
-    font-size: $size-text;
+  scroll-behavior: smooth;
+  font-size: $size-text;
+  height: 3000px; //TEST 0 ENLEVER
 }
 
 body{
@@ -41,8 +42,7 @@ h4{
 p{
   font-family: 'Supermolot', sans-serif;
   font-weight: 400;
-  // font-size: clamp(1.00rem, calc(0.943rem + 0.357vw), 1.20rem);
-  font-size: 24px;
+  font-size: clamp(1.00rem, calc(0.943rem + 0.357vw), 1.20rem);
   max-width: 60ch;
   text-align: left;
   color: $c-txt;
