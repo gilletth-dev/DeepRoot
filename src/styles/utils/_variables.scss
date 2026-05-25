@@ -9,7 +9,7 @@ $c-cas4: #378ADD;
 
 $size-text: 20px;
 
-@mixin underlineHover($height, $bottom){
+@mixin underlineHover($height, $bottom, $c-txt){
     &::after{
         content: "";
         position: absolute;

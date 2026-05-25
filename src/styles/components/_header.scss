@@ -2,14 +2,14 @@
     border-bottom: 1px solid $c-txt;
 
     &__stroke{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto; 
-    padding: 20px; 
-    background-color: $c-bg;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto; 
+        padding: 20px; 
+        background-color: $c-bg;
     }
 
     &__btn{
@@ -68,7 +68,7 @@
         position: relative;
         transition: transform 0.2s ease-in-out;
 
-        @include underlineHover(2px, 0);
+        @include underlineHover(2px, 0, $c-txt);
     }
 
     &__menu{
@@ -116,7 +116,7 @@
             font-size: clamp(1.20rem, calc(0.858rem + 2.281vw), 2.50rem);
             transition: transform 0.2s ease-in-out;
 
-            @include underlineHover(1px, 10px)
+            @include underlineHover(1px, 10px, $c-txt)
         }
 
         &--cas{
