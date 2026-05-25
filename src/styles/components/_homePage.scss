@@ -2,7 +2,7 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px 20px; 
+    padding: 40px 20px 120px; 
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -12,11 +12,10 @@
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         gap: 40px 20px; 
-        padding: 40px 20px;
     }
 
     @media(min-width: 1200px){
-        padding: 40px 0px;
+        padding: 40px 0px 120px;
     }
 
     &__title{
@@ -82,6 +81,41 @@
             grid-column: 3 / 6;
             grid-row: 2 / span 2;
             justify-self: end;
+        }
+    }
+}
+
+.enquete{
+
+
+    &__anim{
+        display: flex;
+        overflow: hidden;
+        white-space: nowrap;
+
+        color: $c-bg;
+        font-weight: 400;
+        background-color: $c-txt;
+        padding: 10px;
+        width: 100%;
+    }
+
+    &__carousel{
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        gap: 10px;
+        padding-right: 10px;
+
+        animation: carousel 20s linear infinite;
+
+        @keyframes carousel {
+            0%{
+                transform: translateX(0);
+            }
+            100%{
+                transform: translateX(-100%);
+            }
         }
     }
 }
