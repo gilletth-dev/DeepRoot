@@ -39,7 +39,7 @@
       <a href="mailto:thibault.gillet@student.heaj.be" class="header__contact">Contact</a>
 
       <ul class="header__menu">
-        <li class="header__el"><a href="#">Enquête</a></li>
+        <li class="header__el"><a href="#enquete">Enquête</a></li>
         <li class="header__el header__el--cas"><a href="#">Cas 01</a></li>
         <li class="header__el header__el--cas"><a href="#">Cas 02</a></li>
         <li class="header__el header__el--cas"><a href="#">Cas 03</a></li>
@@ -69,7 +69,7 @@
       <img src="assets/images/chick.webp" alt="Poussins dans un batiment en train de manger" class="entry__img">
     </div>
 
-    <div class="enquete">
+    <div class="enquete" id="enquete">
       <h4 class="enquete__anim">
         <div class="enquete__carousel">
           <span>Nouvelle Enquête</span>
@@ -113,21 +113,23 @@
         <h4 class="enquete__subtitle">Découvrez nos quatres cas de figures :</h4>
 
         <div class="enquete__card">
-          <article class="enquete__case">
-            <h3 class="enquete__case--title">
-              <span>L'alerte était prête</span>
-              <span>Le signal, non.</span>
+          <article class="enquete__case enquete__case--one">
+            <h3 class="enquete__caption">
+              <a href="#" class="enquete__connect enquete__connect--one">
+                <span>L'alerte était prête</span>
+                <span>Le signal, non.</span>
+              </a>
             </h3>
 
-            <p class="enquete__case--tag">
+            <p class="enquete__tag">
               <span>#Réseau</span>
               <span>#Naissance</span>
             </p>
 
-            <div class="enquete__case--container">
-              <h3 class="enquete__case--number">01</h3>
+            <div class="enquete__container">
+              <h3 class="enquete__number">01</h3>
 
-              <a class="enquete__case--link" href="#">
+              <a class="enquete__link enquete__link--one" href="#">
                 <p>Lire le cas</p>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5 12H19" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
@@ -136,7 +138,7 @@
               </a>
             </div>
 
-            <div class="enquete__case--dekstop">
+            <div class="enquete__dekstop">
               <img src="assets/images/chick.webp" alt="">
 
               <div class="enquete__case--hover">
@@ -144,11 +146,164 @@
               </div>
             </div>
           </article>
+
+          <article class="enquete__case enquete__case--two">
+            <h3 class="enquete__caption">
+              <a href="#" class="enquete__connect enquete__connect--two">
+                <span>Immobile depuis l'aube,</span>
+                <span>invisible à l'oeil.</span>
+              </a>
+            </h3>
+
+            <p class="enquete__tag">
+              <span>#détection</span>
+              <span>#comportement</span>
+            </p>
+
+            <div class="enquete__container">
+              <h3 class="enquete__number">01</h3>
+
+              <a class="enquete__link enquete__link--two" href="#">
+                <p>Lire le cas</p>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 12H19" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 5L19 12L12 19" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+
+            <div class="enquete__dekstop">
+              <img src="assets/images/chick.webp" alt="">
+
+              <div class="enquete__case--hover">
+                <p>La détection d’immobilité fonctionne parfaitement avec les bovins. Dans le bâtiment pour poussins, la densité du vivant obstrue la réflexion de FarmSync. Le capteur voit tout; sauf ce qu’il ne peut pas.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="enquete__case enquete__case--three">
+            <h3 class="enquete__caption">
+              <a href="#" class="enquete__connect enquete__connect--three">
+                <span>Quand tout sonne,</span>
+                <span>plus rien n'alerte.</span>
+              </a>
+            </h3>
+
+            <p class="enquete__tag">
+              <span>#biometrie</span>
+              <span>#notifications</span>
+            </p>
+
+            <div class="enquete__container">
+              <h3 class="enquete__number">01</h3>
+
+              <a class="enquete__link enquete__link--three" href="#">
+                <p>Lire le cas</p>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 12H19" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 5L19 12L12 19" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+
+            <div class="enquete__dekstop">
+              <img src="assets/images/chick.webp" alt="">
+
+              <div class="enquete__case--hover">
+                <p>L'implant analyse le sang en temps réel. Plus de rendez-vous vétérinaire, plus d'attente. Mais quand la biologie fluctue et l'algorithme sonne en boucle, l'éleveur finit par couper le son.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="enquete__case enquete__case--four">
+            <h3 class="enquete__caption">
+              <a href="#" class="enquete__connect enquete__connect--four">
+                <span>Tout est anticipé,</span>
+                <span>sauf le froid.</span>
+              </a>
+            </h3>
+
+            <p class="enquete__tag">
+              <span>#egronomie</span>
+              <span>#capteurs</span>
+            </p>
+
+            <div class="enquete__container">
+              <h3 class="enquete__number">01</h3>
+
+              <a class="enquete__link enquete__link--four" href="#">
+                <p>Lire le cas</p>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 12H19" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 5L19 12L12 19" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+
+            <div class="enquete__dekstop">
+              <img src="assets/images/chick.webp" alt="">
+
+              <div class="enquete__case--hover">
+                <p>Les caméras transforment l'étable en données. L'algorithme optimise l'espace. Puis vient le gel et l'éleveur passe sa journée à réparer des machines au lieu de soigner ses bêtes.</p>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </div>
+
+    <div class="dr">
+      <p class="dr__intro">À propos de Deep Root</p>
+
+      <h2 class="dr__title dr__title--one">
+        <span>Ni pour</span>
+        <span>Ni contre</span>
+      </h2>
+      <h2 class="dr__title dr__title--two">
+        <span>Dedans</span>
+      </h2>
+
+      <div class="dr__text">
+        <p>Nous sommes nés au croisement de deux mondes qui se parlent trop peu : la terre et le code.</p>
+        <p>Deep Root n'est ni un cabinet de conseil en innovation, ni un mouvement de retour en arrière. Nous sommes un collectif hybride. Parmi nous, il y a des éleveurs qui passent leurs journées au milieu des bêtes, des chercheurs en agronomie qui étudient le monde rural, et des développeurs capables de désosser un capteur pour comprendre son fonctionnement.</p>
+      </div>
+
+      <h4 class="dr__subtitle">Notre philosophie : le réalisme critique.</h4>
+
+      <img src="assets/images/pousseCorn.webp" alt="" class="dr__img">
+
+      <div class="dr__text">
+        <p>Nous pensons que la technologie agricole est un outil puissant, mais qu'elle est aujourd'hui déployée sans filtre de réalité. Nous enquêtons pour documenter la vérité du terrain. Nous testons les algorithmes face à la boue, à l'ammoniac, au gel et à l'imprévisibilité du vivant. Notre but n'est pas de rejeter des outils, mais de mettre en lumière leurs angles morts afin que l'éleveur reste maître de son outil, et non l'inverse.
+        Nous creusons là où la donnée s'arrête, là où les racines commencent.</p>
+      </div>
+
+      <h4 class="dr__caption">Nous creusons là où la donnée s'arrête, là où les racines commencent.</h4>
+
+      <div class="dr__data">
+        <div class="dr__data--one">
+          <h2 class="dr__number">143</h2>
+          <p class="dr__label">Exploitations partenaires</p>
+        </div>
+
+        <div class="dr__data--two">
+          <h2 class="dr__number">0</h2>
+          <p class="dr__label">Sponsorings industriel</p>
+        </div>
+
+        <div class="dr__data--three">
+          <h2 class="dr__number">24,8</h2>
+          <p class="dr__label">TB de données analysées</p>
+        </div>
+      </div>
+
+      <div class="dr__contact">
+        <p>Le collectif Deep Root garantit l’anonymat total de ses sources et l'indépendance de ses analyses. Pas de compromis, pas de pression industrielle. Ensemble, documentons le réel pour que la technologie reste au service de la terre, et non l'inverse.</p>
+      </div>
+
+      <h4 class="dr__link"><a href="#" >Contactez-Nous</a></h4>
+    </div>
   </main>
   
-
+  
 </body>
 </html>
