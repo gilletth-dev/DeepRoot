@@ -117,7 +117,7 @@
             // width: max-content;
             transition: transform 0.2s ease-in-out;
 
-            @include underlineHover(2px, 5px, $c-txt)
+            @include underlineHover(4px, -5px, $c-txt)
         }
 
         &--cas{
@@ -128,5 +128,11 @@
                 font-size: clamp(1.00rem, calc(0.724rem + 1.842vw), 2.05rem);
             }
         }
+
+        &--cas1{a{@include underlineHover(4px, -5px, $c-cas1)}}
+        &--cas2{a{@include underlineHover(4px, -5px, $c-cas2)}}
+        &--cas3{a{@include underlineHover(4px, -5px, $c-cas3)}}
+        &--cas4{a{@include underlineHover(4px, -5px, $c-cas4)}}
+
     }
 }
