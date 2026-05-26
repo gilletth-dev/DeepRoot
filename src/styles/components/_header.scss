@@ -110,20 +110,21 @@
         a{
             display: block;
             position: relative;
-            padding: 10px 20px;
+            margin: 10px 20px;
             color: $c-txt;
             text-decoration: none;
             font-size: clamp(1.20rem, calc(0.858rem + 2.281vw), 2.50rem);
+            // width: max-content;
             transition: transform 0.2s ease-in-out;
 
-            @include underlineHover(1px, 10px, $c-txt)
+            @include underlineHover(2px, 5px, $c-txt)
         }
 
         &--cas{
             margin: 0;
 
             a{
-                padding: 10px 20px 10px 60px;
+                margin: 10px 20px 10px 60px;
                 font-size: clamp(1.00rem, calc(0.724rem + 1.842vw), 2.05rem);
             }
         }
