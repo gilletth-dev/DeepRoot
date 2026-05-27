@@ -11,27 +11,33 @@ body{
 }
 
 h1{
-  font-family: "LutzHeadline", sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: clamp(3rem, 1.1429rem + 5.7143vw, 6.2rem); //60 à 124
   text-align: left;
   color: $c-txt;
   margin: 0;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
 h2{
-  font-family: "LutzHeadline", sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: clamp(2.05rem, calc(1.607rem + 2.768vw), 3.60rem); //41 à 72
   text-align: left;
   color: $c-txt;
   margin: 0;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
 h3{
-  font-family: "LutzHeadline", sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: clamp(1.75rem, calc(1.536rem + 1.339vw), 2.50rem); //35 à 50
   text-align: left;
   color: $c-txt;
   margin: 0;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
 h4{
