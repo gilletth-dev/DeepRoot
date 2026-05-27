@@ -9,23 +9,3 @@ $c-cas4: #378ADD;
 
 $size-text: 20px;
 
-@mixin underlineHover($height, $bottom, $c-txt){
-    &::after{
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: $bottom;
-        width: 100%;
-        height: $height;
-        background-color: $c-txt;
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: transform 0.2s ease-in-out;
-    }
-
-    &:hover{
-        &::after{
-            transform: scaleX(1);
-        }
-    }
-}

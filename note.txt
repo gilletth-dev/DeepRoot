@@ -1,8 +1,19 @@
-a dans un h3? 
+Pas de H1 dans le footer
+PAs deux h3 dans la card (number)
+Faire des listes (footer et les card cas)
+Amélirer les animations de la card 
+DEs images
+Ajouter des card dans les pages CAS en bas au lieu de "cas suivant"; problème de savoir ou nous sommes
+Lors de retour vers le haut, l'header revient 
+Améliorer les animations gloabalement ET ameliorer le scss
+Case study
+Page promo
 
-card btn accessibilité
-
-Problème avec font qui ne fait pas les accent
-
-btn home sur logo? Anim?
+<h2 class="dr__title dr__title--one">
+        <span>Ni pour</span>
+        <span>Ni contre</span>
+      </h2>
+      <h2 class="dr__title dr__title--two">
+        <span>Dedans</span>
+      </h2>
 
