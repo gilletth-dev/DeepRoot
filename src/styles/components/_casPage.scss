@@ -185,7 +185,7 @@
     &__for, &__against{
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 40px;
 
         @media(min-width: 800px){
             flex: 1;           
@@ -250,7 +250,7 @@
 
         svg path{
             stroke: $c-txt;
-            stroke-width: 2px;
+            stroke-width: 1.5px;
         }
 
         @media(min-width: 800px){
