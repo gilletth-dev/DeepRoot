@@ -90,9 +90,25 @@
         padding: 40px 20px;
         margin: 40px 0;
 
+        p{
+            max-width: 110ch;
+        }
+
         &--cas01{ 
             background-color: rgba($c-cas1, 0.25);
             border-left: 4px solid $c-cas1;
+        }
+        &--cas02{ 
+            background-color: rgba($c-cas2, 0.25);
+            border-left: 4px solid $c-cas2;
+        }
+        &--cas03{ 
+            background-color: rgba($c-cas3, 0.25);
+            border-left: 4px solid $c-cas3;
+        }
+        &--cas04{ 
+            background-color: rgba($c-cas4, 0.25);
+            border-left: 4px solid $c-cas4;
         }
 
         figcaption{
@@ -246,7 +262,10 @@
         align-self: flex-start;
         position: relative;
 
-        @include underlineHover(4px, -5px, $c-cas2);
+        &--cas01{@include underlineHover(4px, -5px, $c-cas1);}
+        &--cas02{@include underlineHover(4px, -5px, $c-cas2);}
+        &--cas03{@include underlineHover(4px, -5px, $c-cas3);}
+        &--cas04{@include underlineHover(4px, -5px, $c-cas4);}
 
         svg path{
             stroke: $c-txt;

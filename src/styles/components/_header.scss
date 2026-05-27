@@ -54,6 +54,10 @@
         font-family: "LutzHeadline", sans-serif;
         font-size: 24px;
         color: $c-txt;
+        text-decoration: none;
+        position: relative;
+
+        @include underlineHover(2px, 0, $c-txt);
 
         .header__letter:first-child{
             transform: scaleX(-1);      

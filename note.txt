@@ -4,3 +4,5 @@ card btn accessibilité
 
 Problème avec font qui ne fait pas les accent
 
+btn home sur logo? Anim?
+
