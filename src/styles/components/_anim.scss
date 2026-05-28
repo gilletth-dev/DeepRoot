@@ -18,3 +18,24 @@
         }
     }
 }
+
+@mixin underlineHoverBase($height, $bottom, $color){
+    &::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: $bottom;
+        width: 100%;
+        height: $height;
+        background-color: $color;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.2s ease-in-out;
+    }
+}
+
+@mixin underlineHoverTrigger(){
+    &::after{
+        transform: scaleX(1);
+    }
+}

@@ -110,7 +110,7 @@
         color: $c-bg;
         font-weight: 400;
         background-color: $c-txt;
-        padding: 10px 0;
+        // padding: 10px 0;
         width: 100%;
     }
 
@@ -120,6 +120,7 @@
         flex-shrink: 0;
         gap: 10px;
         padding-right: 10px;
+        padding-left: 0;
 
         animation: carousel 20s linear infinite;
 
@@ -130,6 +131,17 @@
             100%{
                 transform: translateX(-100%);
             }
+        }
+
+        li{
+            text-decoration: none;
+            list-style: none;
+            font-family: "Supermolot", sans-serif;
+            font-size: clamp(1.45rem, calc(1.364rem + 0.536vw), 1.75rem); //29 à 35
+            text-align: left;
+            font-weight: 400;
+            color: $c-bg;
+            margin: 0;
         }
     }
 
@@ -175,6 +187,15 @@
         padding-top: 40px;
     }
 
+    &__list{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
     &__case{
         width: 100%;
         box-sizing: border-box;
@@ -183,26 +204,96 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+        position: relative;
+        overflow: hidden;
 
+        
+        &--link{
+            position: absolute;
+            inset: 0;
+            z-index: 4;
+        }
+
+        
+
+        & > img{
+            display: none;
+
+            @media(min-width: 800px){
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                width: 50%;
+                height: 100%;
+                object-fit: cover;
+                z-index: 3; 
+                transition: transform 0.4s ease-in-out;
+            }
+        }
+
+        &--hover{
+            display: none;
+
+            @media(min-width: 800px){
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 50%;
+                height: 100%;
+                background-color: $c-bg;
+                box-sizing: border-box;
+                padding: 30px;
+                z-index: 2; 
+                p{ margin: 0; }
+            }
+        }
 
         @media(min-width: 800px){
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr auto;
+            grid-template-rows: 1fr auto auto;
             gap: 20px;
             padding: 40px;
-            max-height: fit-content;
-        }
 
-        &:hover{
-            img{
-                opacity: 0;
-            }
+            &:hover{
+                img{
+                    transform: translateX(100%);
+                }
 
-            .enquete__case--hover{
-                opacity: 1;
+                .enquete__link{
+                    @include underlineHoverTrigger();
+                }
+
+                .enquete__caption{
+                    &--one{ color: $c-cas1; }
+                    &--two{ color: $c-cas2; }
+                    &--three{ color: $c-cas3; }
+                    &--four{ color: $c-cas4; }
+                }
             }
         }
+    }
+
+    &__link{
+        position: relative;
+
+        &--one{ @include underlineHoverBase(4px, -5px, $c-cas1); }
+        &--two{ @include underlineHoverBase(4px, -5px, $c-cas2); }
+        &--three{ @include underlineHoverBase(4px, -5px, $c-cas3); }
+        &--four{ @include underlineHoverBase(4px, -5px, $c-cas4); }
+    }
+
+    &__caption,
+    &__connect,
+    &__container,
+    &__tag,
+    &__link{
+        position: relative;
+        z-index: 2;
     }
 
     &__caption{
@@ -224,6 +315,15 @@
 
         span{
             display: block;
+            background-image: linear-gradient(currentColor, currentColor);
+            background-size: 0% 1px;
+            background-repeat: no-repeat;
+            background-position: left bottom;
+            transition: background-size 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+
+        &:hover span{
+            background-size: 100% 1px;
         }
 
         &--one{&:hover{color: $c-cas1;}}
@@ -236,8 +336,11 @@
         display: flex;
         gap: 10px;
         flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin: 0;
 
-        span{
+        li{
             text-transform: uppercase;
         }
 
@@ -252,6 +355,8 @@
         display: flex;
         flex-flow: row;
         justify-content: space-between;
+        padding: 0;
+        margin: 0;
 
         @media(min-width: 800px){
             grid-column: 1;
@@ -263,6 +368,7 @@
     &__number{
         font-family: "Supermolot", sans-serif;
         font-weight: 400;
+        margin: 0;
     }
 
     &__link{
@@ -282,50 +388,6 @@
             stroke-width: 1.5px;
             stroke: $c-txt;
         }
-    }
-
-    &__dekstop{
-        display: none;
-
-        @media(min-width: 800px){
-            display: block;
-            grid-column: 2;
-            grid-row: 1 / span 3;
-            position: relative;
-            overflow: hidden;
-            margin: -40px -40px -40px 0;
-        }
-
-        img{
-            width: 100%;
-            height: 100%;
-            max-height: 350px;
-            object-fit: cover;
-            display: block;
-
-            transition: opacity 0.2s ease-in-out;
-        }
-
-        .enquete__case--hover{
-            position: absolute;
-            top: 0;
-            left: 0;
-
-            width: 100%;
-            height: 100%;
-            background-color: $c-bg;
-            box-sizing: border-box;
-            padding-top: 40px;
-
-            opacity: 0;
-            transition: opacity 0.2s ease-in-out;
-
-            p{
-                margin: 0;
-            }
-        }
-
-        
     }
 }
 

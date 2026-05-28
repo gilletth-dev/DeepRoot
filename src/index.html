@@ -70,36 +70,36 @@
     </div>
 
     <div class="enquete" id="enquete">
-      <h4 class="enquete__anim">
-        <div class="enquete__carousel">
-          <span>Nouvelle Enquête</span>
-          <span>&mdash;</span>
-          <span>Nouvelle Enquête</span>
-          <span>&mdash;</span>
-          <span>Nouvelle Enquête</span>
-          <span>&mdash;</span>
-          <span>Nouvelle Enquête</span>
-          <span>&mdash;</span>
-          <span>Nouvelle Enquête</span>
-          <span>&mdash;</span>
-          <span>Nouvelle Enquête</span>
-          <span>&mdash;</span>
-        </div>
-        <div class="enquete__carousel" aria-hidden="true">
-          <span>Nouvelle Enquête</span>
-          <span>&mdash;</span>
-          <span>Nouvelle Enquête</span>
-          <span>&mdash;</span>
-          <span>Nouvelle Enquête</span>
-          <span>&mdash;</span>
-          <span>Nouvelle Enquête</span>
-          <span>&mdash;</span>
-          <span>Nouvelle Enquête</span>
-          <span>&mdash;</span>
-          <span>Nouvelle Enquête</span>
-          <span>&mdash;</span>
-        </div>
-      </h4>
+      <div class="enquete__anim">
+        <ul class="enquete__carousel">
+          <li class="carousel--el">Nouvelle Enquête</li>
+          <li class="carousel--el">&mdash;</li>
+          <li class="carousel--el">Nouvelle Enquête</li>
+          <li class="carousel--el">&mdash;</li>
+          <li class="carousel--el">Nouvelle Enquête</li>
+          <li class="carousel--el">&mdash;</li>
+          <li class="carousel--el">Nouvelle Enquête</li>
+          <li class="carousel--el">&mdash;</li>
+          <li class="carousel--el">Nouvelle Enquête</li>
+          <li class="carousel--el">&mdash;</li>
+          <li class="carousel--el">Nouvelle Enquête</li>
+          <li class="carousel--el">&mdash;</li>
+        </ul>
+        <ul class="enquete__carousel" aria-hidden="true">
+          <li class="carousel--el">Nouvelle Enquête</li>
+          <li class="carousel--el">&mdash;</li>
+          <li class="carousel--el">Nouvelle Enquête</li>
+          <li class="carousel--el">&mdash;</li>
+          <li class="carousel--el">Nouvelle Enquête</li>
+          <li class="carousel--el">&mdash;</li>
+          <li class="carousel--el">Nouvelle Enquête</li>
+          <li class="carousel--el">&mdash;</li>
+          <li class="carousel--el">Nouvelle Enquête</li>
+          <li class="carousel--el">&mdash;</li>
+          <li class="carousel--el">Nouvelle Enquête</li>
+          <li class="carousel--el">&mdash;</li>
+        </ul>
+    </div>
 
       <div class="enquete__content">  
         <h2 class="enquete__title">Le terrain ne ment pas</h2>
@@ -112,42 +112,42 @@
 
         <h4 class="enquete__subtitle">Découvrez nos quatres cas de figures :</h4>
 
-        <div class="enquete__card">
-          <div class="enquete__case enquete__case--one">
-            <h3 class="enquete__caption">
-              <a href="cas01.html" class="enquete__connect enquete__connect--one">
-                <span>L'alerte était prête</span>
-                <span>Le signal, non.</span>
-              </a>
-            </h3>
+        <ul class="enquete__list">
+          <li class="enquete__case enquete__case--one">
+              <a href="cas01.html" class="enquete__case--link" aria-label="Lire le cas 01"></a>
 
-            <p class="enquete__tag">
-              <span>#Réseau</span>
-              <span>#Naissance</span>
-            </p>
+              <h2 class="enquete__caption enquete__caption--one">
+                  
+                      <span>L'alerte était prête.</span>
+                      <span>Le signal, non.</span>
+                  
+              </h2>
 
-            <div class="enquete__container">
-              <h3 class="enquete__number">01</h3>
+              <ul class="enquete__tag">
+                  <li>#réseau</li>
+                  <li>#naissance</li>
+              </ul>
 
-              <a class="enquete__link enquete__link--one" href="cas01.html">
-                <p>Lire le cas</p>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5 12H19" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M12 5L19 12L12 19" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </a>
-            </div>
+              <ul class="enquete__container">
+                  <li class="enquete__number">01</li>
+                  <li class="enquete__link enquete__link--one">
+                      Lire le cas
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5 12H19" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M12 5L19 12L12 19" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </li>
+                </ul>
 
-            <div class="enquete__dekstop">
-              <img src="assets/images/chick.webp" alt="">
+              <img src="assets/images/chick.webp" alt="L'alerte était prête, le signal non">
 
               <div class="enquete__case--hover">
-                <p>Un éleveur épuisé s’en va dormir confiant des naissances à FarmSync. L’agneau se présente mal, l’orage coupe le réseau et l’alerte ne part jamais. Ce cas interroge sur la limite de l’automatisation.</p>
+                  <p>Un éleveur épuisé s'en va dormir confiant des naissances à FarmSync. L'agneau se présente mal, l'orage coupe le réseau et l'alerte ne part jamais. Ce cas interroge sur la limite de l'automatisation.</p>
               </div>
-            </div>
-          </div>
+          </li>
+        </ul>
 
-          <article class="enquete__case enquete__case--two">
+          <!-- <article class="enquete__case enquete__case--two">
             <h3 class="enquete__caption">
               <a href="cas02.html" class="enquete__connect enquete__connect--two">
                 <span>Immobile depuis l'aube,</span>
@@ -247,8 +247,8 @@
                 <p>Les caméras transforment l'étable en données. L'algorithme optimise l'espace. Puis vient le gel et l'éleveur passe sa journée à réparer des machines au lieu de soigner ses bêtes.</p>
               </div>
             </div>
-          </article>
-        </div>
+          </article> -->
+        
       </div>
     </div>
 
