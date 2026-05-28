@@ -1,3 +1,5 @@
+"use strict"
+
 var menuBtn = document.querySelector('.header__btn');
 var menu = document.querySelector('.header__menu');
 var menuLinks = document.querySelectorAll('.header__el a');

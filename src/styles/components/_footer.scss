@@ -42,29 +42,21 @@
         }
     }
 
-    &__link{
-        @media(min-width: 800px){
-            grid-column: 3;
-            grid-row: 1;
-        }
-    }
+    &__list{
+        margin: 0;
+        padding: 0;
 
-    &__pages{
         @media(min-width: 800px){
-            grid-column: 4;
-            grid-row: 1;
-        }
-    }
-
-    &__contact{
-        @media(min-width: 800px){
-            grid-column: 5;
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+            grid-column: 3 / span 3;
             grid-row: 1;
         }
     }
 
     &__name{
-        font-size: clamp(50px, calc(50px + (149 - 50) * ((100vw - 300px) / (1440 - 300))), 149px);
+        font-size: clamp(2.50rem, calc(1.197rem + 8.684vw), 7.45rem);
         
         display: flex;
         flex-direction: row;
