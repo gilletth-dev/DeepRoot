@@ -1,5 +1,5 @@
-
-
+FIG CPATIO
+ICON
 Amélirer les animations de la card 
 pas de burger menu en dekstop
 DEs images
