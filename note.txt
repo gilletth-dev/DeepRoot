@@ -1,11 +1,12 @@
-LIST FOOTER - adresse
-Faire des listes (footer)
+
+
 Amélirer les animations de la card 
 pas de burger menu en dekstop
 DEs images
 Ajouter des card dans les pages CAS en bas au lieu de "cas suivant"; problème de savoir ou nous sommes
 Lors de retour vers le haut, l'header revient 
 Améliorer les animations gloabalement ET ameliorer le scss
+ARIA LABEL & alt
 Case study
 Page promo
 

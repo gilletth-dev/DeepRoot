@@ -248,7 +248,11 @@
             color: $c-txt;
             position: relative;
             
-            @include underlineHover(4px, -2px, $c-txt);
+            @include underlineHoverBase(4px, -2px, $c-txt);
+
+            &:hover{
+                @include underlineHoverTrigger;
+            }
         }
 
         @media(min-width: 800px){

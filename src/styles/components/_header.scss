@@ -1,15 +1,36 @@
 .header{
-    border-bottom: 1px solid $c-txt;
+    width: 100%;
+    background-color: $c-bg;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    transition: transform 0.4s ease-in-out;
+
+    &--up{
+        transform: translateY(-100%);
+    }
+
+    @media(min-width: 800px){
+        border-bottom: 1px solid $c-txt;
+    }
 
     &__stroke{
-        position: relative;
+        border-bottom: 1px solid $c-txt;
+    }
+
+    &__top{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 1200px;
-        margin: 0 auto; 
-        padding: 20px; 
-        background-color: $c-bg;
+        list-style: none;
+        padding: 20px;
+        margin: 0;
+
+        @media(min-width: 800px){
+            
+            max-width: 1200px;
+            margin: 0 auto;
+        }
     }
 
     &__btn{
@@ -23,14 +44,12 @@
         height: 20px; 
         padding: 0;
 
-        transition: transform 0.2s ease-in-out;
-
         .header__rod{
             display: block;
             width: 100%;
             height: 2px; 
             background-color: $c-txt;
-            transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
             transform-origin: center;
         }
 
@@ -46,22 +65,33 @@
             scale: 1.1;
             opacity: 0.7;
         }
+
+        @media(min-width: 800px){
+            visibility: hidden;
+        }
     }
 
     &__logo{
         display: flex;
+        flex-direction: row;
         align-items: center;
-        font-family: "Sora", sans-serif;
-        font-weight: 900;
-        font-size: 24px;
-        color: $c-txt;
         text-decoration: none;
         position: relative;
 
-        @include underlineHover(2px, 0, $c-txt);
+        @include underlineHoverBase(2px, 0, $c-txt);
 
-        .header__letter:first-child{
-            transform: scaleX(-1);      
+        &:hover{ @include underlineHoverTrigger; }
+        
+        &--letter{
+            font-family: "Sora", sans-serif;
+            font-weight: 900;
+            font-size: 24px;
+            color: $c-txt;
+            display: inline-block;
+
+            &:first-child{
+                transform: scaleX(-1);
+            }
         }
     }
 
@@ -70,16 +100,12 @@
         font-size: 20px;
         color: $c-txt;
         text-decoration: none;
-        position: relative;
-        transition: transform 0.2s ease-in-out;
-
-        @include underlineHover(2px, 0, $c-txt);
     }
 
     &__menu{
         position: fixed;
-        top: 50%;
-        left: 50%;
+        top: 50vh;
+        left: 50vw;
         width: 75%;
         max-width: 500px;
         height: auto;
@@ -93,51 +119,78 @@
         
         flex-direction: column;
         justify-content: center;
+        gap: 20px;
         list-style: none;
         pointer-events: none;
         margin: 0;
+        padding: 40px 20px;
         z-index: 2;
         opacity: 0;
         transform: translate(-50%, -60%);
-        transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 
         &--open{
             pointer-events: auto;
             opacity: 1;
             transform: translate(-50%, -50%);
         }
+
+        @media(min-width: 800px){
+            position: static;
+            transform: none;
+            opacity: 1;
+            pointer-events: auto;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            
+            
+            border: none;
+            box-shadow: none;
+            padding: 10px 20px;
+        
+            flex-direction: row;
+            align-items: center;
+            justify-content: left;
+            gap: 40px;
+            list-style: none;
+
+        }
+
     }
 
     &__el{
-        margin: 0;
-        font-family: "Supermolot", sans-serif; 
+        list-style: none; 
         
-        a{
+        a:not(.header__logo){
             display: block;
             position: relative;
             margin: 10px 20px;
             color: $c-txt;
             text-decoration: none;
-            font-size: clamp(1.20rem, calc(0.858rem + 2.281vw), 2.50rem);
-            // width: max-content;
-            transition: transform 0.2s ease-in-out;
+            
+            @include pFormat($c-txt);
+            font-size: clamp(1.45rem, calc(1.250rem + 1.250vw), 1.75rem); //29 à 35
+            @include underlineHoverBase(2px, -2px, $c-txt);
 
-            @include underlineHover(4px, -5px, $c-txt)
-        }
+            &:hover{
+                @include underlineHoverTrigger;
+            }
 
-        &--cas{
-            margin: 0;
-
-            a{
-                margin: 10px 20px 10px 60px;
-                font-size: clamp(1.00rem, calc(0.724rem + 1.842vw), 2.05rem);
+            @media(min-width: 800px){
+                font-size: 24px;
+                margin: 0;
             }
         }
 
-        &--cas1{a{@include underlineHover(4px, -5px, $c-cas1)}}
-        &--cas2{a{@include underlineHover(4px, -5px, $c-cas2)}}
-        &--cas3{a{@include underlineHover(4px, -5px, $c-cas3)}}
-        &--cas4{a{@include underlineHover(4px, -5px, $c-cas4)}}
+        &--contact{a:not(.header__logo){font-size: 24px;}}
+        &--cas1{a:not(.header__logo){@include underlineHoverBase(2px, -2px, $c-cas1)}}
+        &--cas2{a:not(.header__logo){@include underlineHoverBase(2px, -2px, $c-cas2)}}
+        &--cas3{a:not(.header__logo){@include underlineHoverBase(2px, -2px, $c-cas3)}}
+        &--cas4{a:not(.header__logo){@include underlineHoverBase(2px, -2px, $c-cas4)}}
 
+        &:hover{
+            @include underlineHoverTrigger;
+        }
     }
 }

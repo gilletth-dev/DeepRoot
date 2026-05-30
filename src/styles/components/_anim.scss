@@ -1,24 +1,3 @@
-@mixin underlineHover($height, $bottom, $c-txt){
-    &::after{
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: $bottom;
-        width: 100%;
-        height: $height;
-        background-color: $c-txt;
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: transform 0.2s ease-in-out;
-    }
-
-    &:hover{
-        &::after{
-            transform: scaleX(1);
-        }
-    }
-}
-
 @mixin underlineHoverBase($height, $bottom, $color){
     &::after{
         content: "";
@@ -30,7 +9,7 @@
         background-color: $color;
         transform: scaleX(0);
         transform-origin: left;
-        transition: transform 0.25s ease-in-out;
+        transition: transform 0.35s ease-in-out;
     }
 }
 

@@ -25,28 +25,34 @@
 <body>
   <header class="header">
     <div class="header__stroke">  
-      <button class="header__btn">
-        <span class="header__rod"></span>
-        <span class="header__rod"></span>
-        <span class="header__rod"></span>
-      </button>
-
-      <a class="header__logo" href="index.html">
-        <span class="header__letter">D</span>
-        <span class="header__letter">R</span>
-      </a>
-
-      <a href="mailto:thibault.gillet@student.heaj.be" class="header__contact">Contact</a>
-
-      <ul class="header__menu">
-        <li class="header__el"><a href="#enquete">Enquête</a></li>
-        <li class="header__el header__el--cas header__el--cas1"><a href="cas01.html">Cas 01</a></li>
-        <li class="header__el header__el--cas header__el--cas2"><a href="cas02.html">Cas 02</a></li>
-        <li class="header__el header__el--cas header__el--cas3"><a href="cas03.html">Cas 03</a></li>
-        <li class="header__el header__el--cas header__el--cas4"><a href="cas04.html">Cas 04</a></li>
-        <li class="header__el"><a href="#histoire">Histoire</a></li>
+      <ul class="header__top">
+        <li class="header__el"> 
+          <button class="header__btn">
+            <span class="header__rod"></span>
+            <span class="header__rod"></span>
+            <span class="header__rod"></span>
+          </button>
+        </li>
+        <li class="header__el">  
+          <a class="header__logo" href="index.html">
+            <span class="header__logo--letter">D</span>
+            <span class="header__logo--letter">R</span>
+          </a>
+        </li>
+        <li class="header__el header__el--contact">  
+          <a href="mailto:thibault.gillet@student.heaj.be" class="header__contact">Contact</a>
+        </li>  
       </ul>
     </div>
+
+    <ul class="header__menu">
+      <li class="header__el"><a href="#enquete">Enquête</a></li>
+      <li class="header__el header__el--cas header__el--cas1"><a href="cas01.html">Cas 01</a></li>
+      <li class="header__el header__el--cas header__el--cas2"><a href="cas02.html">Cas 02</a></li>
+      <li class="header__el header__el--cas header__el--cas3"><a href="cas03.html">Cas 03</a></li>
+      <li class="header__el header__el--cas header__el--cas4"><a href="cas04.html">Cas 04</a></li>
+      <li class="header__el"><a href="#histoire">Histoire</a></li>
+    </ul>
   </header>
 
   <main>
@@ -84,8 +90,24 @@
           <li class="carousel--el">&mdash;</li>
           <li class="carousel--el">Nouvelle Enquête</li>
           <li class="carousel--el">&mdash;</li>
+          <li class="carousel--el">Nouvelle Enquête</li>
+          <li class="carousel--el">&mdash;</li>
+          <li class="carousel--el">Nouvelle Enquête</li>
+          <li class="carousel--el">&mdash;</li>
+          <li class="carousel--el">Nouvelle Enquête</li>
+          <li class="carousel--el">&mdash;</li>
+          <li class="carousel--el">Nouvelle Enquête</li>
+          <li class="carousel--el">&mdash;</li>
         </ul>
         <ul class="enquete__carousel" aria-hidden="true">
+          <li class="carousel--el">Nouvelle Enquête</li>
+          <li class="carousel--el">&mdash;</li>
+          <li class="carousel--el">Nouvelle Enquête</li>
+          <li class="carousel--el">&mdash;</li>
+          <li class="carousel--el">Nouvelle Enquête</li>
+          <li class="carousel--el">&mdash;</li>
+          <li class="carousel--el">Nouvelle Enquête</li>
+          <li class="carousel--el">&mdash;</li>
           <li class="carousel--el">Nouvelle Enquête</li>
           <li class="carousel--el">&mdash;</li>
           <li class="carousel--el">Nouvelle Enquête</li>
@@ -116,14 +138,14 @@
           <li class="enquete__case enquete__case--one">
               <a href="cas01.html" class="enquete__case--link" aria-label="Lire le cas 01"></a>
 
-              <h2 class="enquete__caption enquete__caption--one">
-                <span>L'alerte était prête.</span>
-                <span>Le signal, non.</span>
-              </h2>
+              <h3 class="enquete__caption enquete__caption--one">
+                <span>L'alerte prête.</span>
+                <span>Le signal, absent.</span>
+              </h3>
 
               <ul class="enquete__tag">
-                  <li>#réseau</li>
-                  <li>#naissance</li>
+                <li>#réseau</li>
+                <li>#naissance</li>
               </ul>
 
               <ul class="enquete__container">
@@ -137,27 +159,27 @@
                   </li>
               </ul>
 
-              <img src="assets/images/chick.webp" alt="L'alerte était prête, le signal non">
+              <img src="assets/images/Cas01-1.webp" alt="Agneau nous regardant à travers la barrière">
 
               <div class="enquete__case--hover">
                   <p>Un éleveur épuisé s'en va dormir confiant des naissances à FarmSync. L'agneau se présente mal, l'orage coupe le réseau et l'alerte ne part jamais. Ce cas interroge sur la limite de l'automatisation.</p>
               </div>
           </li>
           <li class="enquete__case enquete__case--two">
-              <a href="cas02.html" class="enquete__case--link" aria-label="Lire le cas 01"></a>
+              <a href="cas02.html" class="enquete__case--link" aria-label="Lire le cas 02"></a>
 
-              <h2 class="enquete__caption enquete__caption--two">
-                <span>L'alerte était prête.</span>
-                <span>Le signal, non.</span>
-              </h2>
+              <h3 class="enquete__caption enquete__caption--two">
+                <span>Figé dès l'aube,</span>
+                <span>invisible au regard.</span>
+              </h3>
 
               <ul class="enquete__tag">
-                  <li>#réseau</li>
-                  <li>#naissance</li>
+                <li>#comportement</li>
+                <li>#détection</li>
               </ul>
 
               <ul class="enquete__container">
-                <li class="enquete__number">01</li>
+                <li class="enquete__number">02</li>
                 <li class="enquete__link enquete__link--two">
                     Lire le cas
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -167,27 +189,27 @@
                   </li>
               </ul>
 
-              <img src="assets/images/chick.webp" alt="L'alerte était prête, le signal non">
+              <img src="assets/images/Cas02-1.webp" alt="Vaches s'alimentant de foin">
 
               <div class="enquete__case--hover">
-                  <p>Un éleveur épuisé s'en va dormir confiant des naissances à FarmSync. L'agneau se présente mal, l'orage coupe le réseau et l'alerte ne part jamais. Ce cas interroge sur la limite de l'automatisation.</p>
+                  <p>La détection d’immobilité fonctionne parfaitement avec les bovins. Dans le bâtiment pour poussins, la densité du vivant obstrue la réflexion de FarmSync. Le capteur voit tout; sauf ce qu’il ne peut pas.</p>
               </div>
           </li>
           <li class="enquete__case enquete__case--three">
-              <a href="cas03.html" class="enquete__case--link" aria-label="Lire le cas 01"></a>
+              <a href="cas03.html" class="enquete__case--link" aria-label="Lire le cas 03"></a>
 
-              <h2 class="enquete__caption enquete__caption--three">
-                <span>L'alerte était prête.</span>
-                <span>Le signal, non.</span>
-              </h2>
+              <h3 class="enquete__caption enquete__caption--three">
+                <span>Tout sonne,</span>
+                <span>donc rien n'alerte.</span>
+              </h3>
 
               <ul class="enquete__tag">
-                  <li>#réseau</li>
-                  <li>#naissance</li>
+                  <li>#biométrie</li>
+                  <li>#notifications</li>
               </ul>
 
               <ul class="enquete__container">
-                <li class="enquete__number">01</li>
+                <li class="enquete__number">03</li>
                 <li class="enquete__link enquete__link--three">
                     Lire le cas
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -197,27 +219,27 @@
                   </li>
               </ul>
 
-              <img src="assets/images/chick.webp" alt="L'alerte était prête, le signal non">
+              <img src="assets/images/Cas03-1.webp" alt="Personne examininant ses porcs">
 
               <div class="enquete__case--hover">
-                  <p>Un éleveur épuisé s'en va dormir confiant des naissances à FarmSync. L'agneau se présente mal, l'orage coupe le réseau et l'alerte ne part jamais. Ce cas interroge sur la limite de l'automatisation.</p>
+                  <p>L'implant analyse le sang en temps réel. Plus de rendez-vous vétérinaire, plus d'attente. Mais quand la biologie fluctue et l'algorithme sonne en boucle, l'éleveur finit par couper le son.</p>
               </div>
           </li>
           <li class="enquete__case enquete__case--four">
-              <a href="cas04.html" class="enquete__case--link" aria-label="Lire le cas 01"></a>
+              <a href="cas04.html" class="enquete__case--link" aria-label="Lire le cas 04"></a>
 
-              <h2 class="enquete__caption enquete__caption--four">
-                <span>L'alerte était prête.</span>
-                <span>Le signal, non.</span>
-              </h2>
+              <h3 class="enquete__caption enquete__caption--four">
+                <span>Tout anticipé,</span>
+                <span>le froid mis à part.</span>
+              </h3>
 
               <ul class="enquete__tag">
-                  <li>#réseau</li>
-                  <li>#naissance</li>
+                  <li>#ergonomie</li>
+                  <li>#capteurs</li>
               </ul>
 
               <ul class="enquete__container">
-                <li class="enquete__number">01</li>
+                <li class="enquete__number">04</li>
                 <li class="enquete__link enquete__link--four">
                     Lire le cas
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -227,10 +249,10 @@
                   </li>
               </ul>
 
-              <img src="assets/images/chick.webp" alt="L'alerte était prête, le signal non">
+              <img src="assets/images/Cas04-1.webp" alt="Chèvre dans un pré enneigé">
 
               <div class="enquete__case--hover">
-                  <p>Un éleveur épuisé s'en va dormir confiant des naissances à FarmSync. L'agneau se présente mal, l'orage coupe le réseau et l'alerte ne part jamais. Ce cas interroge sur la limite de l'automatisation.</p>
+                  <p>Les caméras transforment l'étable en données. L'algorithme optimise l'espace. Puis vient le gel et l'éleveur passe sa journée à réparer des machines au lieu de soigner ses bêtes.</p>
               </div>
           </li>
         </ul>
@@ -254,7 +276,7 @@
 
       <h4 class="dr__subtitle">Notre philosophie : le réalisme critique.</h4>
 
-      <img src="assets/images/pousseCorn.webp" alt="" class="dr__img">
+      <img src="assets/images/pousseCorn.webp" alt="Pousse de maïs dans un champ" class="dr__img">
 
       <div class="dr__text">
         <p>Nous pensons que la technologie agricole est un outil puissant, mais qu'elle est aujourd'hui déployée sans filtre de réalité. Nous enquêtons pour documenter la vérité du terrain. Nous testons les algorithmes face à la boue, à l'ammoniac, au gel et à l'imprévisibilité du vivant. Notre but n'est pas de rejeter des outils, mais de mettre en lumière leurs angles morts afin que l'éleveur reste maître de son outil, et non l'inverse.
@@ -263,28 +285,28 @@
 
       <h4 class="dr__caption">Nous creusons là où la donnée s'arrête, là où les racines commencent.</h4>
 
-      <div class="dr__data">
-        <div class="dr__data--one">
+      <ul class="dr__data">
+        <li class="dr__data--one">
           <h2 class="dr__number">143</h2>
           <p class="dr__label">Exploitations partenaires</p>
-        </div>
+        </li>
 
-        <div class="dr__data--two">
+        <li class="dr__data--two">
           <h2 class="dr__number">0</h2>
           <p class="dr__label">Sponsorings industriel</p>
-        </div>
+        </li>
 
-        <div class="dr__data--three">
+        <li class="dr__data--three">
           <h2 class="dr__number">24,8</h2>
           <p class="dr__label">TB de données analysées</p>
-        </div>
-      </div>
+        </li>
+      </ul>
 
       <div class="dr__contact">
         <p>Le collectif Deep Root garantit l’anonymat total de ses sources et l'indépendance de ses analyses. Pas de compromis, pas de pression industrielle. Ensemble, documentons le réel pour que la technologie reste au service de la terre, et non l'inverse.</p>
       </div>
 
-      <h4 class="dr__link"><a href="#" >Contactez-Nous</a></h4>
+      <h5 class="dr__link"><a href="#" >Contactez-Nous</a></h5>
     </div>
   </main>
   

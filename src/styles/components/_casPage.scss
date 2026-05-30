@@ -40,6 +40,8 @@
     }
 
     &__number{
+        font-weight: 400;
+        
         @media(min-width: 800px){
             grid-column: 5;
             grid-row: 1;
@@ -262,10 +264,14 @@
         align-self: flex-start;
         position: relative;
 
-        &--cas01{@include underlineHover(4px, -5px, $c-cas1);}
-        &--cas02{@include underlineHover(4px, -5px, $c-cas2);}
-        &--cas03{@include underlineHover(4px, -5px, $c-cas3);}
-        &--cas04{@include underlineHover(4px, -5px, $c-cas4);}
+        &--cas01{@include underlineHoverBase(4px, -5px, $c-cas1);}
+        &--cas02{@include underlineHoverBase(4px, -5px, $c-cas2);}
+        &--cas03{@include underlineHoverBase(4px, -5px, $c-cas3);}
+        &--cas04{@include underlineHoverBase(4px, -5px, $c-cas4);}
+
+        &:hover{
+            @include underlineHoverTrigger;
+        }
 
         svg path{
             stroke: $c-txt;

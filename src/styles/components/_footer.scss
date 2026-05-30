@@ -38,7 +38,11 @@
             position: relative;
             align-self: flex-start;
 
-            @include underlineHover(2px, 0px, $c-txt);
+            @include underlineHoverBase(2px, 0px, $c-txt);
+
+            &:hover{
+                @include underlineHoverTrigger;
+            }
         }
     }
 
@@ -90,7 +94,11 @@
         position: relative;
         width: max-content;
 
-        @include underlineHover(1px, 0px, $c-txt);
+        @include underlineHoverBase(1px, 0px, $c-txt);
+
+        &:hover{
+            @include underlineHoverTrigger;
+        }
 
         @media(min-width: 800px){
             grid-column: 1;
