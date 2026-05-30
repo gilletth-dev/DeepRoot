@@ -325,6 +325,7 @@
             color: $c-bg;
  
             z-index: 0;
+            transition: color 0.4s ease-in-out;
 
             span{ display: block; }
         }
@@ -345,10 +346,6 @@
             font-size: clamp(1.2rem, calc(1.2rem + 0.268vw), 1.45rem); //25 à 29
             color: $c-bg;
             margin: 0;
-
-            @media(min-width: 800px) {
-                transition: color 0.4s ease-in-out;
-            }
         }
 
         &--nav{
@@ -371,15 +368,17 @@
             flex: 1;
         }
 
-        &:nth-child(1) { .cas__other--nav { @include underlineHoverBase(4px, -5px, $c-cas2); } }
-        &:nth-child(2) { .cas__other--nav { @include underlineHoverBase(4px, -5px, $c-cas3); } }
-        &:nth-child(3) { .cas__other--nav { @include underlineHoverBase(4px, -5px, $c-cas4); } }
+        &--nav1 { @include underlineHoverBase(4px, -5px, $c-cas1); } 
+        &--nav2 { @include underlineHoverBase(4px, -5px, $c-cas2); } 
+        &--nav3 { @include underlineHoverBase(4px, -5px, $c-cas3); } 
+        &--nav4 { @include underlineHoverBase(4px, -5px, $c-cas4); } 
 
         &:hover{
             .cas__other--nav { @include underlineHoverTrigger; }
-            &:nth-child(1):hover { .cas__other--subtitle { color: $c-cas2; } }
-            &:nth-child(2):hover { .cas__other--subtitle { color: $c-cas3; } }
-            &:nth-child(3):hover { .cas__other--subtitle { color: $c-cas4; } }
+            .cas__other--title1{ color: $c-cas1; }
+            .cas__other--title2{ color: $c-cas2; }
+            .cas__other--title3{ color: $c-cas3; }
+            .cas__other--title4{ color: $c-cas4; }
         
 
             @media(min-width: 800px) {

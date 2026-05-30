@@ -23,30 +23,36 @@
 
 </head>
 <body>
-    <header class="header">
+  <header class="header">
     <div class="header__stroke">  
-      <button class="header__btn">
-        <span class="header__rod"></span>
-        <span class="header__rod"></span>
-        <span class="header__rod"></span>
-      </button>
-
-      <a class="header__logo" href="index.html">
-        <span class="header__letter">D</span>
-        <span class="header__letter">R</span>
-      </a>
-
-      <a href="mailto:thibault.gillet@student.heaj.be" class="header__contact">Contact</a>
-
-      <ul class="header__menu">
-        <li class="header__el"><a href="index.html#enquete">Enquête</a></li>
-        <li class="header__el header__el--cas header__el--cas1"><a href="cas01.html">Cas 01</a></li>
-        <li class="header__el header__el--cas header__el--cas2"><a href="cas02.html">Cas 02</a></li>
-        <li class="header__el header__el--cas header__el--cas3"><a href="cas03.html">Cas 03</a></li>
-        <li class="header__el header__el--cas header__el--cas4"><a href="cas04.html">Cas 04</a></li>
-        <li class="header__el"><a href="index.html#histoire">Histoire</a></li>
+      <ul class="header__top">
+        <li class="header__el"> 
+          <button class="header__btn">
+            <span class="header__rod"></span>
+            <span class="header__rod"></span>
+            <span class="header__rod"></span>
+          </button>
+        </li>
+        <li class="header__el">  
+          <a class="header__logo" href="index.html" aria-label="Accueil">
+            <span class="header__logo--letter">D</span>
+            <span class="header__logo--letter">R</span>
+          </a>
+        </li>
+        <li class="header__el header__el--contact">  
+          <a href="mailto:thibault.gillet@student.heaj.be" class="header__contact" aria-label="Nous Contacter par email">Contact</a>
+        </li>  
       </ul>
     </div>
+
+    <ul class="header__menu">
+      <li class="header__el"><a href="index.html#enquete" aria-label="Enquête">Enquête</a></li>
+      <li class="header__el header__el--cas header__el--cas1"><a href="cas01.html" aria-label="Cas 01">Cas 01</a></li>
+      <li class="header__el header__el--cas header__el--cas2"><a href="cas02.html" aria-label="Cas 02">Cas 02</a></li>
+      <li class="header__el header__el--cas header__el--cas3"><a href="cas03.html" aria-label="Cas 03">Cas 03</a></li>
+      <li class="header__el header__el--cas header__el--cas4"><a href="cas04.html" aria-label="Cas 04">Cas 04</a></li>
+      <li class="header__el"><a href="index.html#histoire" aria-label="Histoire">Histoire</a></li>
+    </ul>
   </header>
 
   <main>
@@ -63,7 +69,7 @@
                 La détection d’immobilité fonctionne parfaitement avec les bovins. Dans le bâtiment pour poussins, la densité du vivant obstrue la réflexion de FarmSync. Le capteur voit tout; sauf ce qu’il ne peut pas.
             </p>
 
-            <img src="../assets/images/chick.webp" alt="" class="cas__img cas__img--first">
+            <img src="../assets/images/Cas02-2.webp" alt="" class="cas__img cas__img--first">
         </div>
 
         <figure class="cas__caption cas__caption--cas02 cas__caption--first">
@@ -97,69 +103,127 @@
             </div>
         </div>
 
-        <img src="../assets/images/pousseCorn.webp" alt="" class="cas__img cas__img--last">
+        <img src="../assets/images/Cas02-3.webp" alt="" class="cas__img cas__img--last">
 
-        <div class="cas__compare">
-            <div class="cas__for">
-                <h4 class="cas__subtitle cas__subtitle--compare">Ce que FarmSync apporte</h4>
+        <ul class="cas__compare">
+          <li class="cas__for">
+              <h4 class="cas__subtitle cas__subtitle--compare">Ce que FarmSync apporte</h4>
 
-                <ul class="cas__list">
-                    <li class="cas__el">Détection automatique d'immobilité prolongée sur bêtes sevrées</li>
-                    <li class="cas__el">Localisation précise par GPS local couplé à la caméra</li>
-                    <li class="cas__el">Analyse complète lancée sans intervention manuelle</li>
-                    <li class="cas__el">Permet la gestion à distance d'un troupeau dispersé</li>
-                </ul>
-            </div>
+              <ul class="cas__list">
+                  <li class="cas__el">Détection automatique d'immobilité prolongée sur bêtes sevrées</li>
+                  <li class="cas__el">Localisation précise par GPS local couplé à la caméra</li>
+                  <li class="cas__el">Analyse complète lancée sans intervention manuelle</li>
+                  <li class="cas__el">Permet la gestion à distance d'un troupeau dispersé</li>
+              </ul>
+          </li>
 
-            <span class="cas__stroke"></span>
+          <li class="cas__stroke"></li>
 
-            <div class="cas__against">
-                <h4 class="cas__subtitle cas__subtitle--compare">Les problématiques</h4>
+          <li class="cas__against">
+              <h4 class="cas__subtitle cas__subtitle--compare">Les problématiques</h4>
 
-                <ul class="cas__list">
-                    <li class="cas__el">L'implant est impossible sur les jeunes bêtes</li>
-                    <li class="cas__el">La caméra thermique est aveugle aux dynamiques de groupe denses</li>
-                    <li class="cas__el">Le système pense en unités et non en comportements collectifs</li>
-                    <li class="cas__el">La première partie de vie des animaux n’est assez prise en compte</li>
-                </ul>
-            </div>
-        </div>
+              <ul class="cas__list">
+                  <li class="cas__el">L'implant est impossible sur les jeunes bêtes</li>
+                  <li class="cas__el">La caméra thermique est aveugle aux dynamiques de groupe denses</li>
+                  <li class="cas__el">Le système pense en unités et non en comportements collectifs</li>
+                  <li class="cas__el">La première partie de vie des animaux n’est assez prise en compte</li>
+              </ul>
+          </li>
+        </ul>
 
-        <a class="cas__link cas__link--cas03" href="cas03.html">
-            <p>Cas suivant</p>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ul class="cas__others">
+        <li class="cas__other">
+          <a href="cas01.html" class="cas__other--link" aria-label="Voir le cas 01"></a>
+          <ul class="cas__other--visual">
+            <li  class="cas__other--img"><img src="../assets/images/Cas01-1.webp" alt=""></li>
+            <li class="cas__other--title cas__other--title1">
+              <span>L'alerte prête.</span>
+              <span>Le signal, absent.</span>
+            </li>
+          </ul>
+          <ul class="cas__other--card">
+            <li class="cas__other--subtitle">Cas 01</li>
+            <li class="cas__other--nav cas__other--nav1">  
+              <p>Lire le cas 01</p>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <path d="M5 12H19" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M12 5L19 12L12 19" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-        </a>
+              </svg>
+            </li> 
+          </ul>
+        </li>
+
+        <li class="cas__other">
+          <a href="cas03.html" class="cas__other--link" aria-label="Voir le cas 03"></a>
+          <ul class="cas__other--visual">
+            <li  class="cas__other--img"><img src="../assets/images/Cas03-1.webp" alt=""></li>
+            <li class="cas__other--title cas__other--title3">
+              <span>Tout sonne,</span>
+              <span>donc rien n'alerte.</span>
+            </li>
+          </ul>
+          <ul class="cas__other--card">
+            <li class="cas__other--subtitle">Cas 03</li>
+            <li class="cas__other--nav cas__other--nav3">
+              <p>Lire le cas 03</p>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M5 12H19" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 5L19 12L12 19" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </li>
+          </ul>
+        </li>
+
+        <li class="cas__other">
+          <a href="cas04.html" class="cas__other--link" aria-label="Voir le cas 04"></a>
+          <ul class="cas__other--visual">
+            <li  class="cas__other--img"><img src="../assets/images/Cas04-1.webp" alt=""></li>
+            <li class="cas__other--title cas__other--title4">
+              <span>Tout anticipé,</span>
+              <span>le froid mis à part.</span>
+            </li>
+          </ul>
+          <ul class="cas__other--card">
+            <li class="cas__other--subtitle">Cas 04</li>
+            <li class="cas__other--nav cas__other--nav4">
+              <p>Lire le cas 04</p>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M5 12H19" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 5L19 12L12 19" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
   </main>
 
   <footer class="footer">
     <div class="footer__stroke">
-      <div class="footer__link">
-        <a href="index.html#histoire">Histoire</a>
-        <a href="index.html#enquete">Enquête</a>
-      </div>
+      <ul class="footer__list">
+        <li class="footer__el footer__link">
+          <a href="index.html#histoire" aria-label="Histoire">Histoire</a>
+          <a href="index.html#enquete" aria-label="Enquête">Enquête</a>
+        </li>
 
-      <div class="footer__pages">
-        <a href="#">Case study</a>
-        <a href="#">Crédits</a>
-      </div>
+        <li class="footer__el footer__pages">
+          <a href="#" aria-label="Voir le case study">Case study</a>
+          <a href="#" aria-label="Voir les crédits">Crédits</a>
+        </li>
 
-      <div class="footer__contact">
-        <a href="mailto:gilletthibault23@gmail.com">Contact</a>
-        <p>Rue des Essarts 186, Haillot</p>
-      </div>
+        <li class="footer__el footer__contact">
+          <a href="mailto:thibault.gillet@student.heaj.be" aria-label="Nous contacter par email">Contact</a>
+        </li>
+      </ul>
 
-      <h1 class="footer__name">
+      <h2 class="footer__name">
         <span>Deep</span>
         <span>Root</span>
-      </h1>
+      </h2>
 
       <p class="footer__caption">Connecter la terre sans déconnecter les hommes.</p>
 
-      <a class="footer__copy" href="https://thibaultgillet.be/projets/">by thibault gillet</a>
+      <a class="footer__copy" href="https://thibaultgillet.be/projets/" aria-label="Voir les autres projets">by thibault gillet</a>
     </div>
   </footer>
 </body>
