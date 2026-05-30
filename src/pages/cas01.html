@@ -5,14 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>PROJECT</title>
-  <meta name="description" content="">
-  <meta property="og:site_name" content=""> 
-  <meta property="og:title" content=""> 
-  <meta property="og:description" content=""> 
+  <title>Deep Root - Cas 01</title>
+  <meta name="description" content="Ce cas interroge sur la limite de l’automatisation. Un éleveur épuisé s’en va dormir confiant des naissances à FarmSync. L’agneau se présente mal, l’orage coupe le réseau et l’alerte ne part jamais.">
+  <meta property="og:site_name" content="Deep Root"> 
+  <meta property="og:title" content="Deep Root - Cas 01"> 
+  <meta property="og:description" content="Ce cas interroge sur la limite de l’automatisation. Un éleveur épuisé s’en va dormir confiant des naissances à FarmSync. L’agneau se présente mal, l’orage coupe le réseau et l’alerte ne part jamais."> 
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://thibaultgillet.be/projets/">
-  <meta property="og:image" content="https://thibaultgillet.be/projets/indexdex/assets/images/imageDePartage.png"> 
+  <meta property="og:url" content="https://thibaultgillet.be/projets/tfa/cas01">
+  <meta property="og:image" content="https://thibaultgillet.be/projets/tfa/assets/images/imageDePartage.png"> 
   <meta property="og:image:width" content="767">
   <meta property="og:image:height" content="795">
   
@@ -23,143 +23,201 @@
 
 </head>
 <body>
-    <header class="header">
+  <header class="header">
     <div class="header__stroke">  
-      <button class="header__btn">
-        <span class="header__rod"></span>
-        <span class="header__rod"></span>
-        <span class="header__rod"></span>
-      </button>
-
-      <a class="header__logo" href="index.html">
-        <span class="header__letter">D</span>
-        <span class="header__letter">R</span>
-      </a>
-
-      <a href="mailto:thibault.gillet@student.heaj.be" class="header__contact">Contact</a>
-
-      <ul class="header__menu">
-        <li class="header__el"><a href="index.html#enquete">Enquête</a></li>
-        <li class="header__el header__el--cas header__el--cas1"><a href="cas01.html">Cas 01</a></li>
-        <li class="header__el header__el--cas header__el--cas2"><a href="cas02.html">Cas 02</a></li>
-        <li class="header__el header__el--cas header__el--cas3"><a href="cas03.html">Cas 03</a></li>
-        <li class="header__el header__el--cas header__el--cas4"><a href="cas04.html">Cas 04</a></li>
-        <li class="header__el"><a href="index.html#histoire">Histoire</a></li>
+      <ul class="header__top">
+        <li class="header__el"> 
+          <button class="header__btn">
+            <span class="header__rod"></span>
+            <span class="header__rod"></span>
+            <span class="header__rod"></span>
+          </button>
+        </li>
+        <li class="header__el">  
+          <a class="header__logo" href="index.html" aria-label="Accueil">
+            <span class="header__logo--letter">D</span>
+            <span class="header__logo--letter">R</span>
+          </a>
+        </li>
+        <li class="header__el header__el--contact">  
+          <a href="mailto:thibault.gillet@student.heaj.be" class="header__contact" aria-label="Nous Contacter par email">Contact</a>
+        </li>  
       </ul>
     </div>
+
+    <ul class="header__menu">
+      <li class="header__el"><a href="#enquete" aria-label="Enquête">Enquête</a></li>
+      <li class="header__el header__el--cas header__el--cas1"><a href="cas01.html" aria-label="Cas 01">Cas 01</a></li>
+      <li class="header__el header__el--cas header__el--cas2"><a href="cas02.html" aria-label="Cas 02">Cas 02</a></li>
+      <li class="header__el header__el--cas header__el--cas3"><a href="cas03.html" aria-label="Cas 03">Cas 03</a></li>
+      <li class="header__el header__el--cas header__el--cas4"><a href="cas04.html" aria-label="Cas 04">Cas 04</a></li>
+      <li class="header__el"><a href="#histoire" aria-label="Histoire">Histoire</a></li>
+    </ul>
   </header>
 
   <main>
     <div class="cas">
-        <div class="cas__entry">
-            <h3 class="cas__number">01</h3>
+      <div class="cas__entry">
+          <h3 class="cas__number">01</h3>
 
-            <h2 class="cas__title">
-                <span>L'alerte prête.</span>
-                <span>Le signal, absent.</span>
-            </h2>
+          <h2 class="cas__title">
+            <span>L'alerte prête.</span>
+            <span>Le signal, absent.</span>
+          </h2>
 
-            <p class="cas__intro">
-                Un éleveur épuisé s’en va dormir confiant des naissances à FarmSync. L’agneau se présente mal, l’orage coupe le réseau et l’alerte ne part jamais. Ce cas interroge sur la limite de l’automatisation.
-            </p>
+          <p class="cas__intro">
+              Un éleveur épuisé s’en va dormir confiant des naissances à FarmSync. L’agneau se présente mal, l’orage coupe le réseau et l’alerte ne part jamais. Ce cas interroge sur la limite de l’automatisation.
+          </p>
 
-            <img src="../assets/images/chick.webp" alt="" class="cas__img cas__img--first">
-        </div>
+          <img src="../assets/images/Cas01-2.webp" alt="" class="cas__img cas__img--first">
+      </div>
 
-        <figure class="cas__caption cas__caption--cas01 cas__caption--first">
-            <h5>"J'avais activé le son. C'est tout ce que j'avais à faire. L'application devait me réveiller si ça commençait. Je me suis endormi en pensant que j'avais fait mon travail et  que la technologie faisait le reste. Au matin, aucunes notifications. J'ai cru que tout allait bien."</h5>
-            <figcaption>Thomas V. &mdash; Eleveur ovin, Bastogne</figcaption>
-        </figure>
+      <figure class="cas__caption cas__caption--cas01 cas__caption--first">
+          <h5>"J'avais activé le son. C'est tout ce que j'avais à faire. L'application devait me réveiller si ça commençait. Je me suis endormi en pensant que j'avais fait mon travail et  que la technologie faisait le reste. Au matin, aucunes notifications. J'ai cru que tout allait bien."</h5>
+          <figcaption>Thomas V. &mdash; Eleveur ovin, Bastogne</figcaption>
+      </figure>
 
-        <div class="cas__article cas__article--first">
-            <h4 class="cas__subtitle cas__subtitle--first">Que s’est-il passé?</h4>
+      <div class="cas__article cas__article--first">
+          <h4 class="cas__subtitle cas__subtitle--first">Que s’est-il passé?</h4>
 
-            <div class="cas__text cas__text--first">
-                <p>À 3h12, un orage sec frappe le réseau local. Le routeur redémarre en boucle, incapable de rétablir le pont WiFi avec l'étable. Dans le bâtiment, la brebis #102 entre en phase d’agnelage. L'agneau se présente mal.</p>
-                <p>L'application FarmSync détecte les contractions via l'implant interne. Elle génère l'alerte et tente de l'envoyer. Le signal meurt au pied de l'antenne. La notification ne partira jamais.</p>
-                <p>Au réveil, Thomas trouve un écran vide. Le calme n'était qu'une illusion. En se rendant à l'étable, il ne peut que constater les dégâts d'une naissance sans assistance.</p>
-            </div>
-        </div>
+          <div class="cas__text cas__text--first">
+              <p>À 3h12, un orage sec frappe le réseau local. Le routeur redémarre en boucle, incapable de rétablir le pont WiFi avec l'étable. Dans le bâtiment, la brebis #102 entre en phase d’agnelage. L'agneau se présente mal.</p>
+              <p>L'application FarmSync détecte les contractions via l'implant interne. Elle génère l'alerte et tente de l'envoyer. Le signal meurt au pied de l'antenne. La notification ne partira jamais.</p>
+              <p>Au réveil, Thomas trouve un écran vide. Le calme n'était qu'une illusion. En se rendant à l'étable, il ne peut que constater les dégâts d'une naissance sans assistance.</p>
+          </div>
+      </div>
 
-        <img src="../assets/images/pousseCorn.webp" alt="" class="cas__app">
+      <img src="../assets/images/Cas01-3.webp" alt="" class="cas__app"> 
 
-        <figure class="cas__caption cas__caption--cas01 cas__caption--last">
-            <h5>En automatisant la vigilance, n’avons-nous pas reléguer l’instinct de l’éleveur au second plan?</h5>
-        </figure>
+      <figure class="cas__caption cas__caption--cas01 cas__caption--last">
+          <h5>En automatisant la vigilance, n’avons-nous pas reléguer l’instinct de l’éleveur au second plan?</h5>
+      </figure>
 
-        <div class="cas__article cas__article--last">
-            <h4 class="cas__subtitle cas__subtitle--last">Notre analyse</h4>
+      <div class="cas__article cas__article--last">
+          <h4 class="cas__subtitle cas__subtitle--last">Notre analyse</h4>
 
-            <div class="cas__text cas__text--last">
-                <p>Ce cas illustre le paradoxe fondamental de toute automatisation de la vigilance; en déléguant l'attention à la machine, l'éleveur désapprend à surveiller. L'instinct diminue. La sensibilité au troupeau, savoir-faire en lui-même, s'efface au profit d'une interface.</p>
-                <p>FarmSync promet une précision de 98% sur l'heure de mise à bas. Ce chiffre est réel, nous avons pu le constaster. Mais il ne dit rien sur ce que les 2% peuvent engendrer.</p>
-                <p>Pourtant, rejeter en bloc cet outil serait une erreur. Pour beaucoup d'agriculteurs, cette technologie est une promesse de liberté et de santé préservée. Elle offre enfin la possibilité de s'accorder un sommeil réparateur, de partager un repas en famille et de vivre une vie “normale”. Le véritable défi n'est pas de refuser ce repos mais de trouver l'équilibre pour que la machine reste une aide. Sans jamais étouffer l'expérience humaine.</p>
-            </div>
-        </div>
+          <div class="cas__text cas__text--last">
+              <p>Ce cas illustre le paradoxe fondamental de toute automatisation de la vigilance; en déléguant l'attention à la machine, l'éleveur désapprend à surveiller. L'instinct diminue. La sensibilité au troupeau, savoir-faire en lui-même, s'efface au profit d'une interface.</p>
+              <p>FarmSync promet une précision de 98% sur l'heure de mise à bas. Ce chiffre est réel, nous avons pu le constaster. Mais il ne dit rien sur ce que les 2% peuvent engendrer.</p>
+              <p>Pourtant, rejeter en bloc cet outil serait une erreur. Pour beaucoup d'agriculteurs, cette technologie est une promesse de liberté et de santé préservée. Elle offre enfin la possibilité de s'accorder un sommeil réparateur, de partager un repas en famille et de vivre une vie “normale”. Le véritable défi n'est pas de refuser ce repos mais de trouver l'équilibre pour que la machine reste une aide. Sans jamais étouffer l'expérience humaine.</p>
+          </div>
+      </div>
 
-        <img src="../assets/images/pousseCorn.webp" alt="" class="cas__img cas__img--last">
+      <img src="../assets/images/Cas01-3.webp" alt="" class="cas__img cas__img--last">
 
-        <div class="cas__compare">
-            <div class="cas__for">
-                <h4 class="cas__subtitle cas__subtitle--compare">Ce que FarmSync apporte</h4>
+      <ul class="cas__compare">
+          <li class="cas__for">
+              <h4 class="cas__subtitle cas__subtitle--compare">Ce que FarmSync apporte</h4>
 
-                <ul class="cas__list">
-                    <li class="cas__el">Détection des contractions à 98% de précision sur l'heure de naissance</li>
-                    <li class="cas__el">Confirmation croisée capteur + caméra thermique</li>
-                    <li class="cas__el">Historique complet des naissances et des anomalies détectées</li>
-                    <li class="cas__el">Permet à un éleveur malade de se reposer</li>
-                </ul>
-            </div>
+              <ul class="cas__list">
+                  <li class="cas__el">Détection des contractions à 98% de précision sur l'heure de naissance</li>
+                  <li class="cas__el">Confirmation croisée capteur + caméra thermique</li>
+                  <li class="cas__el">Historique complet des naissances et des anomalies détectées</li>
+                  <li class="cas__el">Permet à un éleveur malade de se reposer</li>
+              </ul>
+          </li>
 
-            <span class="cas__stroke"></span>
+          <li class="cas__stroke"></li>
 
-            <div class="cas__against">
-                <h4 class="cas__subtitle cas__subtitle--compare">Les problématiques</h4>
+          <li class="cas__against">
+              <h4 class="cas__subtitle cas__subtitle--compare">Les problématiques</h4>
 
-                <ul class="cas__list">
-                    <li class="cas__el">Dépendance totale à la connectivité réseau</li>
-                    <li class="cas__el">Aucun mode prévu pour les alertes critiques</li>
-                    <li class="cas__el">L'instinct de l'éleveur diminue progressivement</li>
-                    <li class="cas__el">La responsabilité en cas d'échec reste floue</li>
-                </ul>
-            </div>
-        </div>
+              <ul class="cas__list">
+                  <li class="cas__el">Dépendance totale à la connectivité réseau</li>
+                  <li class="cas__el">Aucun mode prévu pour les alertes critiques</li>
+                  <li class="cas__el">L'instinct de l'éleveur diminue progressivement</li>
+                  <li class="cas__el">La responsabilité en cas d'échec reste floue</li>
+              </ul>
+          </li>
+      </ul>
 
-        <a class="cas__link cas__link--cas02" href="cas02.html">
-            <p>Cas suivant</p>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <ul class="cas__others">
+        <li class="cas__other">
+          <a href="cas02.html" class="cas__other--link" aria-label="Voir le cas 02"></a>
+          <img src="../assets/images/Cas02-1.webp" alt="" class="cas__other--img">
+          <h4 class="cas__other--subtitle">
+            <span>Figé dès l'aube,</span>
+            <span>invisible au regard.</span>
+          </h4>
+          <ul class="cas__other--card">
+            <li class="cas__other--title">Cas 02</li>
+            <li class="cas__other--vnav">  
+              <p>Lire le cas 02</p>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <path d="M5 12H19" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M12 5L19 12L12 19" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-        </a>
+              </svg>
+            </li> 
+          </ul>
+        </li>
+
+        <li class="cas__other">
+          <a href="cas03.html" class="cas__other--link" aria-label="Voir le cas 03"></a>
+          <img src="../assets/images/Cas03-1.webp" alt="" class="cas__other--img">
+          <h4 class="cas__other--subtitle">
+            <span>Tout sonne,</span>
+            <span>donc rien n'alerte.</span>
+          </h4>
+          <ul class="cas__other--card">
+            <li class="cas__other--title">Cas 03</li>
+            <li class="cas__other--nav">
+              <p>Lire le cas 03</p>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M5 12H19" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 5L19 12L12 19" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </li>
+          </ul>
+        </li>
+
+        <li class="cas__other">
+          <a href="cas04.html" class="cas__other--link" aria-label="Voir le cas 04"></a>
+          <img src="../assets/images/Cas04-1.webp" alt="" class="cas__other--img">
+          <h4 class="cas__other--subtitle">
+            <span>Tout anticipé,</span>
+            <span>le froid mis à part.</span>
+          </h4>
+          <ul class="cas__other--card">
+            <li class="cas__other--title">Cas 04</li>
+            <li class="cas__other--nav">
+              <p>Lire le cas 04</p>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M5 12H19" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 5L19 12L12 19" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
   </main>
 
   <footer class="footer">
     <div class="footer__stroke">
-      <div class="footer__link">
-        <a href="index.html#histoire">Histoire</a>
-        <a href="index.html#enquete">Enquête</a>
-      </div>
+      <ul class="footer__list">
+        <li class="footer__el footer__link">
+          <a href="index.html#histoire" aria-label="Histoire">Histoire</a>
+          <a href="index.html#enquete" aria-label="Enquête">Enquête</a>
+        </li>
 
-      <div class="footer__pages">
-        <a href="#">Case study</a>
-        <a href="#">Crédits</a>
-      </div>
+        <li class="footer__el footer__pages">
+          <a href="#" aria-label="Voir le case study">Case study</a>
+          <a href="#" aria-label="Voir les crédits">Crédits</a>
+        </li>
 
-      <div class="footer__contact">
-        <a href="mailto:gilletthibault23@gmail.com">Contact</a>
-        <p>Rue des Essarts 186, Haillot</p>
-      </div>
+        <li class="footer__el footer__contact">
+          <a href="mailto:thibault.gillet@student.heaj.be" aria-label="Nous contacter par email">Contact</a>
+        </li>
+      </ul>
 
-      <h1 class="footer__name">
+      <h2 class="footer__name">
         <span>Deep</span>
         <span>Root</span>
-      </h1>
+      </h2>
 
       <p class="footer__caption">Connecter la terre sans déconnecter les hommes.</p>
 
-      <a class="footer__copy" href="https://thibaultgillet.be/projets/">by thibault gillet</a>
+      <a class="footer__copy" href="https://thibaultgillet.be/projets/" aria-label="Voir les autres projets">by thibault gillet</a>
     </div>
   </footer>
 </body>

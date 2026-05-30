@@ -164,10 +164,6 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
-
-        // @media(min-width: 800px){
-        //     padding-right: 40px;
-        // }
     }
 
     &__app{
@@ -187,6 +183,7 @@
         display: flex;
         flex-direction: column;
         gap: 40px;
+        padding: 0;
         padding-bottom: 80px;
 
         @media(min-width: 800px){
@@ -255,33 +252,6 @@
         margin: 0;
     }
 
-    &__link{
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        text-decoration: none;
-        color: $c-txt;
-        align-self: flex-start;
-        position: relative;
-
-        &--cas01{@include underlineHoverBase(4px, -5px, $c-cas1);}
-        &--cas02{@include underlineHoverBase(4px, -5px, $c-cas2);}
-        &--cas03{@include underlineHoverBase(4px, -5px, $c-cas3);}
-        &--cas04{@include underlineHoverBase(4px, -5px, $c-cas4);}
-
-        &:hover{
-            @include underlineHoverTrigger;
-        }
-
-        svg path{
-            stroke: $c-txt;
-            stroke-width: 1.5px;
-        }
-
-        @media(min-width: 800px){
-            grid-column: 5;
-            grid-row: 9;
-            justify-self: end;
-        }
-    }
+    
+    
 }
