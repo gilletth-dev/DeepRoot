@@ -1,6 +1,7 @@
 "use strict";
 
 // MENU
+// Ouverture menu
 var menuBtn = document.querySelector('.header__btn');
 var menu = document.querySelector('.header__menu');
 var menuLinks = document.querySelectorAll('.header__el a');
@@ -35,6 +36,7 @@ document.addEventListener('click', function(e){
   }
 });
 
+// Header scroll
 var header = document.querySelector('.header');
 let oldScrollY = 0;
 
@@ -55,3 +57,6 @@ function scrollListener() {
 
   oldScrollY = currentScroll
 }
+
+// Anim decompte 
+// Compteur animé au scroll
