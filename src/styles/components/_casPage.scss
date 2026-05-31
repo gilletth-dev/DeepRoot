@@ -56,19 +56,29 @@
         }
     }
 
-    &__img{
-        width: 75%;
-        object-fit: cover;
-        display: block;
-        align-self: center;
+    &__figure{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        img{
+            width: 75%;
+            object-fit: cover;
+            display: block;
 
-        @media(min-width: 800px){
-            width: 100%;
+            @media(min-width: 640px) and (max-width: 799px){
+                width: 50%;
+            }
+            @media(min-width: 800px){
+                width: 100%;
+            }
         }
 
         &--first{
-            aspect-ratio: 4 / 3;
-            // max-height: 150px;
+            img{
+                aspect-ratio: 4 / 3;
+        
+            }
 
             @media(min-width: 800px){
                 grid-column: 4 / span 2;
@@ -78,7 +88,9 @@
         }
 
         &--last{
-            aspect-ratio: 3 / 4;
+            img{
+                aspect-ratio: 3 / 4;
+            }
 
             @media(min-width: 800px){
                 grid-column: 4 / span 2;
@@ -116,7 +128,7 @@
             border-left: 4px solid $c-cas4;
         }
 
-        figcaption{
+        cite{
             font-family: "Supermolot", sans-serif;
             font-weight: 400;
             font-size: clamp(0.85rem, calc(0.811rem + 0.263vw), 1.00rem); //17 à 20
@@ -170,11 +182,22 @@
     }
 
     &__app{
-        width: 100%;
-        aspect-ratio: 4 / 3;
-        object-fit: cover;
-        display: block;
-        align-self: center;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img, figcaption{
+            width: 70%;
+            // aspect-ratio: 4 / 3;
+            object-fit: cover;
+            display: block;
+            align-self: center;
+
+            @media(min-width: 640px) and (max-width: 799px){
+                width: 50%;
+            }
+        }
 
         @media(min-width: 800px){
             grid-column: 4 / span 2;

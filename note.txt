@@ -1,20 +1,9 @@
 FIG CPATIO
-ICON
-Amélirer les animations de la card 
-pas de burger menu en dekstop
-DEs images
-Ajouter des card dans les pages CAS en bas au lieu de "cas suivant"; problème de savoir ou nous sommes
-Lors de retour vers le haut, l'header revient 
-Améliorer les animations gloabalement ET ameliorer le scss
-ARIA LABEL & alt
+Animations decompte
+Apostrophes
 Case study
+credits
 Page promo
 
-<h2 class="dr__title dr__title--one">
-        <span>Ni pour</span>
-        <span>Ni contre</span>
-      </h2>
-      <h2 class="dr__title dr__title--two">
-        <span>Dedans</span>
-      </h2>
+
 

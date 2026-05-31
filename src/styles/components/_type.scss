@@ -77,3 +77,17 @@ p{
   color: $color;
   margin: 0;
 }
+
+figcaption{
+  font-family: "Supermolot", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+  color: $c-txt;
+  margin-top: 10px;
+  width: 75%;
+
+  @media(min-width: 800px){
+    width: 100%;
+  }
+}
