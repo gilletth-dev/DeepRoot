@@ -60,3 +60,37 @@ function scrollListener() {
 
 // Anim decompte 
 // Compteur animé au scroll
+function isOnScreen(element){
+  const viewPortHeight = window.innerHeight;
+  const scrollTop = window.scrollY;
+  const elementPosY = element.offsetTop;
+  const elementHeight = element.offsetHeight;
+
+  return (elementPosY + elementHeight > scrollTop && elementPosY < (viewPortHeight + scrollTop)); //Verif si element est bien etre top et bas ecran
+}
+
+window.addEventListener("scroll", function(){
+  document.querySelectorAll('.dr__number').forEach(function(data){
+    const target = parseInt(data.textContent);
+    const isVisible = isOnScreen(data);
+
+    if(isVisible && !data.classList.contains('counted')){
+      data.classList.add('counted');
+
+      const target = parseInt(data.getAttribute('data-target'));
+      let startValue = 0;
+      const pas = target / 60; //60 frame
+
+      const timer = setInterval(function(){
+        startValue += pas;
+        data.textContent = Math.floor(startValue);
+
+        if(startValue >= target){
+          clearInterval(timer);
+          data.textContent = target;
+          data.nextElementSibling.classList.add('is-visible');
+        }
+      }, 25); //ms 
+    }
+  });
+});
