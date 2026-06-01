@@ -1,6 +1,6 @@
 "use strict";
 
-// MENU
+// MENU 
 // Ouverture menu
 var menuBtn = document.querySelector('.header__btn');
 var menu = document.querySelector('.header__menu');
@@ -94,3 +94,6 @@ window.addEventListener("scroll", function(){
     }
   });
 });
+
+
+// CASE STUDY

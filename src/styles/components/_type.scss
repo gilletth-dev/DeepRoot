@@ -20,6 +20,11 @@ h1{
   font-weight: 900;
 }
 
+@mixin caseStudyTitle{
+  font-family: "Grandola", sans-serif;
+  color: $c-txtCS;
+}
+
 h2{
   font-family: "Sora", sans-serif;
   font-size: clamp(2.05rem, calc(1.607rem + 2.768vw), 3.60rem); //41 à 72
@@ -66,6 +71,11 @@ p{
   text-align: left;
   color: $c-txt;
   margin: 0;
+}
+
+@mixin caseStudyP{
+  font-family: "Lakes", sans-serif;
+  color: $c-txtCS;
 }
 
 @mixin pFormat($color){
