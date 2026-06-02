@@ -1,0 +1,191 @@
+.nav{
+    border-bottom: 2px solid $c-txtCS;
+    background-color: $c-bgCS;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    --nav-height: 50px;
+    height: var(--nav-height);
+    
+    overflow: visible;
+    z-index: 3;
+   
+    &__link{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 5px;
+        text-decoration: none;
+        @include underlineHoverBase(4px, -2px, $c-hoverCS);
+        
+        &:hover{
+            @include underlineHoverTrigger();
+        }
+        
+        p{ 
+            font-size: 14px;
+            @include caseStudyTitle;
+            
+            @media(min-width: 800px){
+                font-size: 24px;
+            }
+        }
+        
+        svg{
+            height: auto;
+            transform: rotate(-45deg);
+            
+            path{ 
+                stroke-width: 2px;
+                stroke: $c-txtCS; 
+            }
+
+            @media(min-width: 800px){
+                width: 32px;
+            }
+        }
+    }
+    
+    &__btn{
+       background: none;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 32px;
+        height: 20px; 
+        padding: 0;
+        z-index: 3;
+
+        .nav__rod{
+            display: block;
+            width: 100%;
+            height: 2px; 
+            background-color: $c-txtCS;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            transform-origin: center;
+        }
+
+        &--open{
+            justify-content: center;
+
+            .nav__rod:first-child {transform: translateY(1.5px) rotate(45deg);}
+            .nav__rod:nth-child(2) {opacity: 0; transform: scaleX(0);}
+            .nav__rod:last-child {transform: translateY(-1.5px) rotate(-45deg);}
+        }
+
+        &:hover{
+            scale: 1.1;
+            opacity: 0.7;
+        }
+
+        @media(min-width: 800px){
+            visibility: hidden;
+        }
+    }
+    
+    
+    .nav__menu{
+        position: fixed;
+        top: 0; 
+        left: 0;
+        width: 100%;
+        height: 100vh; 
+        margin: 0;
+
+        
+        background-color: $c-bgCS;
+        border: none;
+        padding: 40px 20px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px; 
+        
+        opacity: 1;
+        transform: translateY(-100%);
+        pointer-events: none;
+        transition: transform 0.4s ease-in-out; 
+        
+        &--open{
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+        
+        .nav__el{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            
+            a{
+                font-size: clamp(1.75rem, calc(1.536rem + 1.339vw), 2.50rem);
+                @include caseStudyTitle;
+                text-decoration: none;
+                display: inline-block;
+            }
+        }
+    }
+
+    @media (min-width: 800px){
+        padding-left: 80px;
+
+        .nav__btn{
+            display: none;
+        }
+        
+        .nav__menu{
+            position: fixed;
+            top: var(--nav-height);
+            left: 0;
+            width: 40px;
+            height: calc(100vh - var(--nav-height));
+            background-color: $c-bgCS;
+            border-right: 2px solid $c-txtCS;
+            transform: none;
+            opacity: 1;
+            pointer-events: auto;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 40px;
+            padding: 50px 10px;
+            margin: 0;
+            z-index: 2;
+            
+            .nav__el a {
+                font-size: 24px;
+                writing-mode: vertical-rl;
+                transform: rotate(180deg);
+                display: block;
+                margin: 0;
+                
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 4px;
+                    height: 100%;
+                    background-color: $c-hoverCS;
+                    transform: scaleY(0);
+                    transform-origin: top;
+                    transition: transform 0.4s ease-in-out;
+                }
+                
+                &:hover::after {
+                    transform: scaleY(1);
+                }                    
+            }
+        }
+    }
+}

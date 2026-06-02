@@ -3,20 +3,28 @@
 // MENU 
 // Ouverture menu
 const menuBtn = document.querySelector('.header__btn');
+const navBtn = document.querySelector('.nav__btn');
 const menu = document.querySelector('.header__menu');
-const caseStudyMenu = document.querySelector('.header__menu--caseStudy');
+const caseStudyMenu = document.querySelector('.nav__menu');
 const menuLinks = document.querySelectorAll('.header__el a');
-menuBtn.addEventListener('click', menuOpen);
+
+if (menuBtn) {
+  menuBtn.addEventListener('click', menuOpen);
+}
+if (navBtn) {
+  navBtn.addEventListener('click', menuOpen);
+}
 
 function menuOpen() {
   if (caseStudyMenu) {
-    caseStudyMenu.classList.toggle('header__menu--caseStudy--open');
+    caseStudyMenu.classList.toggle('nav__menu--open');
+    navBtn.classList.toggle('nav__btn--open');
   } else if (menu) {
     menu.classList.toggle('header__menu--open');
+    menuBtn.classList.toggle('header__btn--open');
   }
 
-  menuBtn.classList.toggle('header__btn--open');
-  const isOpen = menu.classList.contains('header__menu--open') || caseStudyMenu.classList.contains('header__menu--caseStudy--open');
+  const isOpen = menu.classList.contains('header__menu--open') || caseStudyMenu.classList.contains('nav__menu--open');
 
   if (isOpen) {
     document.body.style.overflow = 'hidden';
@@ -30,7 +38,7 @@ menuLinks.forEach(function (link) {
 });
 
 document.addEventListener('click', function(e){
-  const isOpen = menu.classList.contains('header__menu--open') || caseStudyMenu.classList.contains('header__menu--caseStudy--open');
+  const isOpen = menu.classList.contains('header__menu--open') || caseStudyMenu.classList.contains('nav__menu--open');
   
   if (isOpen){
     if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
@@ -41,36 +49,35 @@ document.addEventListener('click', function(e){
 
 function closeMenu() {
   menu.classList.remove('header__menu--open');
-  caseStudyMenu.classList.remove('header__menu--caseStudy--open');
+  caseStudyMenu.classList.remove('nav__menu--open');
   menuBtn.classList.remove('header__btn--open');
+  navBtn.classList.remove('nav__btn--open');
   document.body.style.overflow = 'auto';
 }
 
 // Header scroll
 const header = document.querySelector('.header');
-let oldScrollY = 0;
 
-window.addEventListener("scroll", scrollListener);
-function scrollListener() {
-  if(header.classList.contains('header--caseStudy')){
-    header.classList.remove("header--up");
-    return;
-  } 
+if (header){
+  let oldScrollY = 0;
 
-  const maxScroll = document.body.scrollHeight - window.innerHeight;
-  const currentScroll = window.scrollY;
+  window.addEventListener("scroll", scrollListener);
+  function scrollListener() {
+    const maxScroll = document.body.scrollHeight - window.innerHeight;
+    const currentScroll = window.scrollY;
 
-  const isScrollingUp = oldScrollY > currentScroll;
-  const isAtTop = currentScroll === 0;
-  const isAtBottom = currentScroll === maxScroll;
+    const isScrollingUp = oldScrollY > currentScroll;
+    const isAtTop = currentScroll === 0;
+    const isAtBottom = currentScroll === maxScroll;
 
-  if(isScrollingUp || isAtTop || isAtBottom){
-    header.classList.remove("header--up");
-  } else {
-    header.classList.add("header--up");
+    if(isScrollingUp || isAtTop || isAtBottom){
+      header.classList.remove("header--up");
+    } else {
+      header.classList.add("header--up");
+    }
+
+    oldScrollY = currentScroll
   }
-
-  oldScrollY = currentScroll
 }
 
 // Anim decompte 
@@ -91,6 +98,7 @@ window.addEventListener("scroll", function(){
 
     if(isVisible && !data.classList.contains('counted')){
       data.classList.add('counted');
+      data.nextElementSibling.classList.add('is-visible');
 
       const target = parseInt(data.getAttribute('data-target'));
       let startValue = 0;
@@ -103,12 +111,8 @@ window.addEventListener("scroll", function(){
         if(startValue >= target){
           clearInterval(timer);
           data.textContent = target;
-          data.nextElementSibling.classList.add('is-visible');
         }
       }, 25); //ms 
     }
   });
 });
-
-
-// CASE STUDY
