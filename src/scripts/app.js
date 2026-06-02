@@ -42,6 +42,11 @@ let oldScrollY = 0;
 
 window.addEventListener("scroll", scrollListener);
 function scrollListener() {
+  if(header.classList.contains('header--caseStudy')){
+    header.classList.remove("header--up");
+    return;
+  } 
+
   const maxScroll = document.body.scrollHeight - window.innerHeight;
   const currentScroll = window.scrollY;
 

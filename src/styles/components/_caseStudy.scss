@@ -1,0 +1,132 @@
+main {
+    min-height: 100vh;
+    background-color: $c-bgCS;
+}
+
+
+.header--caseStudy{
+    border-bottom: 2px solid $c-txtCS;
+    background-color: $c-bgCS;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    position: fixed; 
+
+    .header__link{
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        @include underlineHoverBase(4px, -2px, $c-hoverCS);
+
+        &:hover{
+            @include underlineHoverTrigger();
+        }
+
+        p{ 
+            font-size: 14px;
+            @include caseStudyTitle;
+
+            @media(min-width: 800px){
+                font-size: 24px;
+            }
+        }
+
+        svg{
+            transform: rotate(-45deg);
+            
+            path{ 
+                stroke-width: 2px;
+                stroke: $c-txtCS; 
+            }
+        }
+    }
+
+    .header__btn--caseStudy{
+        z-index: 3; 
+    }
+
+    .header__rod--caseStudy{
+        background-color: $c-txtCS;
+    }
+    
+
+    .header__menu--caseStudy{
+        position: fixed;
+        top: 0; 
+        left: 0;
+        width: 100%;
+        max-width: none;
+        height: 100vh; 
+        max-height: none;
+        
+        background-color: $c-bgCS;
+        border: none;
+        padding: 40px 20px; 
+        display: flex;
+        flex-direction: column;
+        gap: 30px; 
+        
+        transform: translateY(-100%);
+        pointer-events: none;
+        transition: transform 0.4s ease-in-out; 
+
+        &.header__menu--open{
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        .header__el--caseStudy{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            a{
+                @include pFormat($c-txtCS);
+                @include caseStudyTitle;
+                text-decoration: none;
+                display: inline-block;
+                
+                @include underlineHoverBase(2px, -2px, $c-hoverCS);
+
+                &:hover{
+                    @include underlineHoverTrigger();
+                }
+            }
+        }
+    }
+}
+
+.footer--caseStudy{
+    background-color: $c-bgCS;
+    border-top: 2px solid $c-txtCS;
+    
+    .footer__list--caseStudy{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        padding: 10px 20px;
+        margin: 0;
+        list-style: none;
+    }
+
+    .footer__el--caseStudy{
+        a{
+            position: relative;
+            @include pFormat($c-txtCS);
+            @include caseStudyTitle;
+            text-decoration: none;
+            font-size: 14px;
+
+            @include underlineHoverBase(2px, -2px, $c-hoverCS);
+
+            &:hover{
+                @include underlineHoverTrigger();
+            }
+        }
+    }
+}
