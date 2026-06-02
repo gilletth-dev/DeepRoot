@@ -2,26 +2,27 @@
 
 // MENU 
 // Ouverture menu
-var menuBtn = document.querySelector('.header__btn');
-var menu = document.querySelector('.header__menu');
-var menuLinks = document.querySelectorAll('.header__el a');
+const menuBtn = document.querySelector('.header__btn');
+const menu = document.querySelector('.header__menu');
+const caseStudyMenu = document.querySelector('.header__menu--caseStudy');
+const menuLinks = document.querySelectorAll('.header__el a');
 menuBtn.addEventListener('click', menuOpen);
 
 function menuOpen() {
-  menu.classList.toggle('header__menu--open');
-  menuBtn.classList.toggle('header__btn--open');
+  if (caseStudyMenu) {
+    caseStudyMenu.classList.toggle('header__menu--caseStudy--open');
+  } else if (menu) {
+    menu.classList.toggle('header__menu--open');
+  }
 
-  if (menu.classList.contains('header__menu--open')) {
+  menuBtn.classList.toggle('header__btn--open');
+  const isOpen = menu.classList.contains('header__menu--open') || caseStudyMenu.classList.contains('header__menu--caseStudy--open');
+
+  if (isOpen) {
     document.body.style.overflow = 'hidden';
   } else {
     document.body.style.overflow = 'auto';
   }
-}
-
-function closeMenu() {
-  menu.classList.remove('header__menu--open');
-  menuBtn.classList.remove('header__btn--open');
-  document.body.style.overflow = 'auto';
 }
 
 menuLinks.forEach(function (link) {
@@ -29,15 +30,24 @@ menuLinks.forEach(function (link) {
 });
 
 document.addEventListener('click', function(e){
-  if (menu.classList.contains('header__menu--open')) {
+  const isOpen = menu.classList.contains('header__menu--open') || caseStudyMenu.classList.contains('header__menu--caseStudy--open');
+  
+  if (isOpen){
     if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
       closeMenu();
     }
   }
 });
 
+function closeMenu() {
+  menu.classList.remove('header__menu--open');
+  caseStudyMenu.classList.remove('header__menu--caseStudy--open');
+  menuBtn.classList.remove('header__btn--open');
+  document.body.style.overflow = 'auto';
+}
+
 // Header scroll
-var header = document.querySelector('.header');
+const header = document.querySelector('.header');
 let oldScrollY = 0;
 
 window.addEventListener("scroll", scrollListener);

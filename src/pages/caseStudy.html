@@ -24,7 +24,7 @@
 </head>
 <body>
     <header class="header header--caseStudy">
-        <a class="header__link" href="index.html">
+        <a class="header__link" href="index.html" aria-label="Retour à l'accueil">
             <p>Retourner vers le site</p>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <path d="M5 12H19" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
@@ -39,7 +39,7 @@
         </button>
       
         <ul class="header__menu header__menu--caseStudy">
-            <li class="header__el header__el--caseStudy"><a href="#">Présentation</a></li>
+            <li class="header__el header__el--caseStudy"><a href="#">Intro</a></li>
             <li class="header__el header__el--caseStudy"><a href="#">Projet</a></li>
             <li class="header__el header__el--caseStudy"><a href="#">Design</a></li>
             <li class="header__el header__el--caseStudy"><a href="#">Code</a></li>
@@ -47,25 +47,27 @@
         </ul>
     </header>
 
-  <main>
-    <!-- <section class="caseStudy">
-      <h4 class="caseStudy__subtitle">Case Study</h4>
-      <h1 class="caseStudy__title">
-        <span>Deep</span>
-        <span>Root</span>
-      </h1>
+  <main class="main--caseStudy">
+    <section class="caseStudy">*
+        <div class="caseStudy__entry">
+            <h4 class="caseStudy__subtitle">Case Study</h4>
+            <h1 class="caseStudy__title">
+                <span>Deep</span>
+                <span>Root</span>
+            </h1>
+        </div>
 
-      <div class="caseStudy__text">
-        <p>Le projet prend comme base le Design Fiction. Ce dernier représente la pratique de la création de porotypes tangibles et évocateurs dans un possible avenir proche. Cela permet de d’explorer et mettre en lumière les conséquences, néfastes ou non, de ces projets.</p>
+        <div class="caseStudy__text">
+            <p>Le projet prend comme base le Design Fiction. Ce dernier représente la pratique de la création de porotypes tangibles et évocateurs dans un possible avenir proche. Cela permet de d’explorer et mettre en lumière les conséquences, néfastes ou non, de ces projets.</p>
 
-        <p>Afin de d’être aider dans la démarche de réflexion, ce projet a commencé tôt dans l’année. Dès octobre 2025, la lecture d’un article de presse, venant du site L’ADN,  et son analyse était demandé toutes les deux semaines. À ce moment, cela ne faisait pas sens mais je remarquait déjà une attirance pour les articles concernant la technologie spatiale et le développement de l’AgTech, branche ultra moderne de l’agriculture moderne. </p>
+            <p>Afin de d’être aider dans la démarche de réflexion, ce projet a commencé tôt dans l’année. Dès octobre 2025, la lecture d’un article de presse, venant du site L’ADN,  et son analyse était demandé toutes les deux semaines. À ce moment, cela ne faisait pas sens mais je remarquait déjà une attirance pour les articles concernant la technologie spatiale et le développement de l’AgTech, branche ultra moderne de l’agriculture moderne. </p>
 
-        <p>Dès lors, début mars, lorsque que j’ai commencé à me pencher sur un sujet pour mon projet de design fiction, une direction me semblait claire. Il fallait que je mèle mes deux sujets préférés d’articles. Cet <a href="https://www.ladn.eu/tech-a-suivre/agriculture-nouvelles-technologies-agtech/" target="_blank">article</a> a marqué un premier pas vers mon sujet de projet. Je pensais alors me lancer dans un projet de comparaison ente l’agriculture industrielle et celle traditionelle, de village.</p>
-      </div>
+            <p>Dès lors, début mars, lorsque que j’ai commencé à me pencher sur un sujet pour mon projet de design fiction, une direction me semblait claire. Il fallait que je mèle mes deux sujets préférés d’articles. Cet <a href="https://www.ladn.eu/tech-a-suivre/agriculture-nouvelles-technologies-agtech/" target="_blank">article</a> a marqué un premier pas vers mon sujet de projet. Je pensais alors me lancer dans un projet de comparaison ente l’agriculture industrielle et celle traditionelle, de village.</p>
+        </div>
 
-      <div class="caseStudy__caption">
-        <h5><span class="underline">Cependant</span>, un évènement marquera un tournant majeur et m’emmènera vers mon sujet final</h5>
-      </div>
+        <div class="caseStudy__caption">
+            <h5><span class="underline">Cependant</span>, un évènement marquera un tournant majeur et m’emmènera vers mon sujet final</h5>
+        </div>
     </section>
 
     <section class="projet">
@@ -82,15 +84,15 @@
 
         <h5 class="projet__bold">Et si mon élevage était connecté à mon téléphone, par capteurs et transmis sur application?</h5>
         
-        <div class="caseStudy__caption">
-            <h5><span class="underline">Et si</span>l’éleveur avait une application qui le permet de suivre la santé de ses bêtes?</h5>
-        </div>
-
+        <h3 class="projet__subtitle">Au final</h3>
+        
         <div class="projet__text">
             <p>Je me suis lancé dans la création d’un univers où les exploitations agricoles sont consultables sur une application. Ce sujet très précis reste assez large paradoxalement. Je me concentre donc sur un projet autour de l’élevage. </p>
         </div>
-
-        <h3 class="projet__subtitle">Au final</h3>
+        
+        <div class="projet__caption">
+            <h5><span class="underline">Et si</span>, l’éleveur avait une application qui le permet de suivre la santé de ses bêtes?</h5>
+        </div>
         
         <div class="projet__text">
             <p>Par caméra, implant, capteur en général, les bêtes sont analysés selon leur déplacement, respiration, contraction, hydratation, alimentation, etc. Et le tout se retrouve dans une application; la ferme devient connectée.</p>
@@ -117,21 +119,26 @@
             <p>La partie design de ce projet est la parti qui m'a pris le plus de temps, en comparaison avec l'écriture du contenu et l'intégration. Ce n'est pas la partie que je trouve la plus intuitive à aborder pour moi, je préfère le code. Cela dit, je remarque qu'avec un bon prototypage, l'intégration devient beaucoup plus fluide.</p>
         </div>
 
-        <h5 class="design__subtitle">Des couleurs</h5>
+        <h3 class="design__subtitle">Des couleurs</h3>
         <div class="design__text">
             <p>Pour Deep Root, je suis parti sur une palette de couleurs naturelles afin de refléter au mieux l’agriculture et l'environnement rural. Un blanc, un peu jaune, rappelant la paille auquel j'ajoute deux nuances de vert.</p>
+        </div>
+        
+        <img src="#" alt="Palette de couleurs de Deep Root" class="design__img">
+        
+        <div class="design__text">
             <p>J'ai souhaité utilisé des couleurs d'accentuation selon les cas afin d'éviter une certaine monotonie.</p>
         </div>
 
-        <img src="#" alt="Palette de couleurs de Deep Root" class="design__img">
-
+        <img src="#" alt="Couleur d'accentuation" class="design__img">
+        
         <div class="design__text">
             <p>Pour FamSync, qu'on ne voit qu'au travers de mockups, je suis parti su une pallete simple; une nuance de blanc et une de noir. À cela, j'ai ajouté des couleurs d'accentuation selon la gravité du message transmis.</p>
         </div>
 
         <img src="#" alt="Palette de couleurs de FarmSync" class="design__img">
 
-        <h5 class="design__subtitle">Des polices</h5>
+        <h3 class="design__subtitle">Des polices</h3>
         <div class="design__text">
             <p>Pour Deep Root, j'ai tout d'abord utilisé Sora comme police pour les titres car je cherchais une police moderne et lisible, tout en gardant un impact marquant.</p>
             <p>En contrepartie, pour le texte, j'ai opté pour une police plus carrée tout en restant facile à lire, afin de faire resortir les titres.</p>
@@ -159,19 +166,19 @@
 
     <section class="rendu">
         <div class="rendu__link">
-            <p>Retourner vers le site</p>
+            <p>Voir le rendu</p>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <path d="M5 12H19" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M12 5L19 12L12 19" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </div>
-    </section> -->
+    </section>
   </main>
   
   <footer class="footer footer--caseStudy">
     <ul class="footer__list footer__list--caseStudy">
         <li class="footer__el footer__el--caseStudy">
-            <a href="https://thibaultgillet.be/projets/" class="footer__by">by thibault gillet</a>
+            <a href="index.html" aria-label="Retour à l'accueil" class="footer__by">by thibault gillet</a>
         </li>
         <li class="footer__el footer__el--caseStudy">
             <a href="#" class="footer__credit">Crédits</a>
