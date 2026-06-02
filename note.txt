@@ -1,10 +1,13 @@
-Case study
-ANIML DECOMPTE arrivé des txt
-erreur js scroll cs et erreur js fermeture menu #histoire
+Case study -- grid 
+
+erreur js scroll cs 
+
 Apostrophes
 
 credits
-Page promo
+
+verif W3C demain debut pm max
+
 
 
 
