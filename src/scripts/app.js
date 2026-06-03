@@ -6,7 +6,8 @@ const menuBtn = document.querySelector('.header__btn');
 const navBtn = document.querySelector('.nav__btn');
 const menu = document.querySelector('.header__menu');
 const caseStudyMenu = document.querySelector('.nav__menu');
-const menuLinks = document.querySelectorAll('.header__el a');
+const menuLinks = document.querySelectorAll('.header__el a'); 
+const navLinks = document.querySelectorAll('.nav__el a'); 
 
 if (menuBtn) {
   menuBtn.addEventListener('click', menuOpen);
@@ -24,7 +25,7 @@ function menuOpen() {
     menuBtn.classList.toggle('header__btn--open');
   }
 
-  const isOpen = menu.classList.contains('header__menu--open') || caseStudyMenu.classList.contains('nav__menu--open');
+  const isOpen = (menu && menu.classList.contains('header__menu--open')) || ( caseStudyMenu && caseStudyMenu.classList.contains('nav__menu--open'));
 
   if (isOpen) {
     document.body.style.overflow = 'hidden';
@@ -33,25 +34,28 @@ function menuOpen() {
   }
 }
 
-menuLinks.forEach(function (link) {
+menuLinks.forEach(function(link) {
+  link.addEventListener('click', closeMenu);
+});
+navLinks.forEach(function(link) {
   link.addEventListener('click', closeMenu);
 });
 
 document.addEventListener('click', function(e){
-  const isOpen = menu.classList.contains('header__menu--open') || caseStudyMenu.classList.contains('nav__menu--open');
+  const isOpen = (menu && menu.classList.contains('header__menu--open')) || ( caseStudyMenu && caseStudyMenu.classList.contains('nav__menu--open'));
   
   if (isOpen){
-    if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
+    if (menu && !menu.contains(e.target) && menuBtn && !menuBtn.contains(e.target)){
       closeMenu();
     }
   }
 });
 
 function closeMenu() {
-  menu.classList.remove('header__menu--open');
-  caseStudyMenu.classList.remove('nav__menu--open');
-  menuBtn.classList.remove('header__btn--open');
-  navBtn.classList.remove('nav__btn--open');
+  if (menu) menu.classList.remove('header__menu--open');
+  if (caseStudyMenu) caseStudyMenu.classList.remove('nav__menu--open');
+  if (menuBtn) menuBtn.classList.remove('header__btn--open');
+  if (navBtn) navBtn.classList.remove('nav__btn--open');
   document.body.style.overflow = 'auto';
 }
 
