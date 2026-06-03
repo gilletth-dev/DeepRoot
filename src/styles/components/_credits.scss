@@ -1,0 +1,32 @@
+.credits, .inspi{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px 80px; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__list{
+        list-style: none;
+
+        li{
+            @include pFormat($c-txt);
+            margin-bottom: 10px;
+            max-width: 100ch;
+
+            a{
+                text-decoration: none;
+                color: $c-txt;
+                font-size: clamp(1.2rem, calc(1.2rem + 0.268vw), 1.45rem); //25 à 29
+                position: relative;
+                @include underlineHoverBase(2px, -2px, $c-txt);
+
+                &:hover{
+                    @include underlineHoverTrigger()
+                }
+            }
+        }
+    }
+}
