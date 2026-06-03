@@ -21,7 +21,12 @@
 }
 
 .caseStudy, .projet, .design, .code, .rendu{
-    h1, h2, h3, h4{
+    &__bold{
+        
+        font-weight: 700;
+        margin: 40px 0 80px;
+    }
+    h1, h2, h3{
         @include caseStudyTitle;
     }
     h2{
@@ -30,21 +35,26 @@
     h3{
         margin-bottom: 30px;
     }
+    h4{
+        font-family: "Lakes", sans-serif;
+        color: $c-txtCS;
+    }
     p{
         @include caseStudyP;
         margin-bottom: 20px;
-    }
-    &__bold{
-        @include caseStudyP;
-        font-weight: 700;
-        margin: 40px 0 80px;
     }
     &__caption{
         background-color: $c-captionCS;
         padding: 40px 20px;
         margin: 80px -20px;
-        h5{
+        h4, h2{
+            font-family: "Lakes", sans-serif;
+            text-transform: none;
+            font-weight: 900;
+            padding: 0;
+            margin: 0;
             color: $c-bgCS;
+            font-size: 35px;
             @media (min-width: 800px){
                 font-size: 35px
             }
@@ -91,9 +101,6 @@
                 margin-left: 1em;
             }
         }
-    }
-    h4, h5{
-        font-family: "Lakes", sans-serif;
     }
 
     &__text{

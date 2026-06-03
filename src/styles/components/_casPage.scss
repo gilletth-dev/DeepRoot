@@ -125,9 +125,13 @@
         padding: 40px 20px;
         margin: 40px 0;
 
-        h5{
+        h3{
             max-width: 110ch;
             text-indent: -0.5ch;
+            font-family: "Supermolot", sans-serif;
+            font-size: clamp(1.2rem, calc(1.2rem + 0.268vw), 1.45rem); //25 à 29
+            text-transform: none;
+            font-weight: 400;
         }
 
         &--cas01{ 

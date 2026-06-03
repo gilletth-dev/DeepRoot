@@ -158,6 +158,10 @@
         a{
             text-decoration: none;
             color: $c-txt;
+            font-family: "Supermolot", sans-serif;
+            font-size: clamp(1.45rem, calc(1.364rem + 0.536vw), 1.75rem); //29 à 35
+            text-align: left;
+            font-weight: 400;
             position: relative;
             
             @include underlineHoverBase(4px, -2px, $c-txt);
