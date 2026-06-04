@@ -158,6 +158,19 @@
             }
         }
 
+        &:hover{
+            .enquete__link{
+                @include underlineHoverTrigger();
+            }
+
+            .enquete__caption{
+                &--one{ color: $c-cas1; }
+                &--two{ color: $c-cas2; }
+                &--three{ color: $c-cas3; }
+                &--four{ color: $c-cas4; }
+            }
+            }
+
         @media(min-width: 800px){
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -168,17 +181,6 @@
             &:hover{
                 img{
                     transform: translateX(100%);
-                }
-
-                .enquete__link{
-                    @include underlineHoverTrigger();
-                }
-
-                .enquete__caption{
-                    &--one{ color: $c-cas1; }
-                    &--two{ color: $c-cas2; }
-                    &--three{ color: $c-cas3; }
-                    &--four{ color: $c-cas4; }
                 }
             }
         }
