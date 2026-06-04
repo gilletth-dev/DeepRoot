@@ -132,6 +132,12 @@
                 @include caseStudyTitle;
                 text-decoration: none;
                 display: inline-block;
+                position: relative;
+                pointer-events: auto;
+
+                @include underlineHoverBase(2px, -2px, $c-hoverCS);
+
+                &:hover{ @include underlineHoverTrigger();}
             }
         }
     }
